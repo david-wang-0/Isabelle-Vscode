@@ -116,7 +116,52 @@ async function activate(context) {
                 { language: "isabelle", scheme: vscode_lib.file_scheme },
                 { language: "isabelle-ml", scheme: vscode_lib.file_scheme },
                 { language: "bibtex", scheme: vscode_lib.file_scheme }
-            ]
+            ],
+            middleware: {
+                provideHover: async (document, position, token, next) => {
+                    const result = await next(document, position, token);
+                    if (result && result.contents) {
+                        // Convert symbols in hover contents
+                        const symbolConverter = new (await Promise.resolve().then(() => __importStar(require('./symbol_converter')))).SymbolConverter(context.extensionUri.fsPath);
+                        if (Array.isArray(result.contents)) {
+                            // Handle array of MarkdownString or string
+                            for (let i = 0; i < result.contents.length; i++) {
+                                const content = result.contents[i];
+                                if (typeof content === 'string') {
+                                    result.contents[i] = await symbolConverter.convertSymbols(content);
+                                }
+                                else if (content && typeof content === 'object' && 'value' in content) {
+                                    const convertedValue = await symbolConverter.convertSymbols(content.value);
+                                    result.contents[i] = new vscode_1.MarkdownString(convertedValue);
+                                }
+                            }
+                        }
+                        else if (typeof result.contents === 'string') {
+                            // Handle single string
+                            result.contents = await symbolConverter.convertSymbols(result.contents);
+                        }
+                        else if (result.contents && typeof result.contents === 'object' && 'value' in result.contents) {
+                            // Handle single MarkdownString
+                            const convertedValue = await symbolConverter.convertSymbols(result.contents.value);
+                            result.contents = new vscode_1.MarkdownString(convertedValue);
+                        }
+                    }
+                    return result;
+                },
+                handleDiagnostics: async (uri, diagnostics, next) => {
+                    // Convert symbols in diagnostic messages
+                    const symbolConverter = new (await Promise.resolve().then(() => __importStar(require('./symbol_converter')))).SymbolConverter(context.extensionUri.fsPath);
+                    const convertedDiagnostics = [];
+                    for (const diagnostic of diagnostics) {
+                        const convertedDiagnostic = { ...diagnostic };
+                        if (convertedDiagnostic.message) {
+                            convertedDiagnostic.message = await symbolConverter.convertSymbols(convertedDiagnostic.message);
+                        }
+                        convertedDiagnostics.push(convertedDiagnostic);
+                    }
+                    return next(uri, convertedDiagnostics);
+                }
+            }
         };
         const language_client = new node_1.LanguageClient("Isabelle", server_options, language_client_options, false);
         vscode_1.window.withProgress({ location: vscode_1.ProgressLocation.Notification, cancellable: false }, async (progress) => {
@@ -129,7 +174,9 @@ async function activate(context) {
         decorations.setup(context);
         context.subscriptions.push(vscode_1.workspace.onDidChangeConfiguration(() => decorations.setup(context)), vscode_1.workspace.onDidChangeTextDocument(event => decorations.touch_document(event.document)), vscode_1.window.onDidChangeActiveTextEditor(editor => { if (editor)
             decorations.update_editor(editor); }), vscode_1.workspace.onDidCloseTextDocument(decorations.close_document));
-        language_client.start().then(() => language_client.onNotification(lsp.decoration_type, decorations.apply_decoration));
+        language_client.start().then(() => language_client.onNotification(lsp.decoration_type, async (decorationData) => {
+            await decorations.apply_decoration(decorationData);
+        }));
         /* super-/subscript decorations */
         (0, script_decorations_1.register_script_decorations)(context);
         /* caret handling */

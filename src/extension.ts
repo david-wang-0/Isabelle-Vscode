@@ -16,7 +16,7 @@ import * as preview_panel from './preview_panel'
 import * as lsp from './lsp'
 import * as state_panel from './state_panel'
 import { Uri, TextEditor, ViewColumn, Selection, Position, ExtensionContext, workspace, window,
-  commands, ProgressLocation } from 'vscode'
+  commands, ProgressLocation, MarkdownString } from 'vscode'
 import { LanguageClient, LanguageClientOptions, ServerOptions } from 'vscode-languageclient/node'
 import { Output_View_Provider } from './output_view'
 import { register_script_decorations } from './script_decorations'
@@ -111,7 +111,52 @@ export async function activate(context: ExtensionContext)
         { language: "isabelle", scheme: vscode_lib.file_scheme },
         { language: "isabelle-ml", scheme: vscode_lib.file_scheme },
         { language: "bibtex", scheme: vscode_lib.file_scheme }
-      ]
+      ],
+      middleware: {
+        provideHover: async (document, position, token, next) => {
+          const result = await next(document, position, token)
+          if (result && result.contents) {
+            // Convert symbols in hover contents
+            const symbolConverter = new (await import('./symbol_converter')).SymbolConverter(context.extensionUri.fsPath)
+
+            if (Array.isArray(result.contents)) {
+              // Handle array of MarkdownString or string
+              for (let i = 0; i < result.contents.length; i++) {
+                const content = result.contents[i]
+                if (typeof content === 'string') {
+                  result.contents[i] = await symbolConverter.convertSymbols(content)
+                } else if (content && typeof content === 'object' && 'value' in content) {
+                  const convertedValue = await symbolConverter.convertSymbols((content as any).value)
+                  result.contents[i] = new MarkdownString(convertedValue)
+                }
+              }
+            } else if (typeof result.contents === 'string') {
+              // Handle single string
+              result.contents = await symbolConverter.convertSymbols(result.contents) as any
+            } else if (result.contents && typeof result.contents === 'object' && 'value' in result.contents) {
+              // Handle single MarkdownString
+              const convertedValue = await symbolConverter.convertSymbols((result.contents as any).value)
+              result.contents = new MarkdownString(convertedValue) as any
+            }
+          }
+          return result
+        },
+        handleDiagnostics: async (uri, diagnostics, next) => {
+          // Convert symbols in diagnostic messages
+          const symbolConverter = new (await import('./symbol_converter')).SymbolConverter(context.extensionUri.fsPath)
+
+          const convertedDiagnostics = []
+          for (const diagnostic of diagnostics) {
+            const convertedDiagnostic = { ...diagnostic }
+            if (convertedDiagnostic.message) {
+              convertedDiagnostic.message = await symbolConverter.convertSymbols(convertedDiagnostic.message)
+            }
+            convertedDiagnostics.push(convertedDiagnostic)
+          }
+
+          return next(uri, convertedDiagnostics)
+        }
+      }
     }
 
     const language_client =
@@ -138,7 +183,9 @@ export async function activate(context: ExtensionContext)
       workspace.onDidCloseTextDocument(decorations.close_document))
 
     language_client.start().then(() =>
-      language_client.onNotification(lsp.decoration_type, decorations.apply_decoration))
+      language_client.onNotification(lsp.decoration_type, async (decorationData) => {
+        await decorations.apply_decoration(decorationData)
+      }))
 
 
     /* super-/subscript decorations */

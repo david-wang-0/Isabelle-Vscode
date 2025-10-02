@@ -5,12 +5,36 @@ PIDE document decorations.
 
 'use strict';
 
-import {window, OverviewRulerLane, Uri} from 'vscode';
+import {window, OverviewRulerLane, Uri, MarkdownString} from 'vscode';
 import { Range, DecorationOptions, DecorationRenderOptions,
   TextDocument, TextEditor, TextEditorDecorationType, ExtensionContext } from 'vscode'
 import { Document_Decorations } from './lsp'
 import * as vscode_lib from './vscode_lib'
+import { SymbolConverter } from './symbol_converter'
 
+/* symbol converter for hover messages */
+let symbolConverter: SymbolConverter
+
+/* helper function to convert symbols in hover messages */
+async function convertHoverMessage(hoverMessage: MarkdownString | MarkdownString[] | undefined): Promise<MarkdownString | MarkdownString[] | undefined> {
+  if (!hoverMessage || !symbolConverter) {
+    return hoverMessage
+  }
+
+  if (Array.isArray(hoverMessage)) {
+    // Handle array of MarkdownStrings
+    const convertedArray: MarkdownString[] = []
+    for (const md of hoverMessage) {
+      const convertedValue = await symbolConverter.convertSymbols(md.value)
+      convertedArray.push(new MarkdownString(convertedValue))
+    }
+    return convertedArray
+  } else {
+    // Handle single MarkdownString
+    const convertedValue = await symbolConverter.convertSymbols(hoverMessage.value)
+    return new MarkdownString(convertedValue)
+  }
+}
 
 /* known decoration types */
 
@@ -80,6 +104,9 @@ const types = new Map<string, TextEditorDecorationType>()
 
 export function setup(context: ExtensionContext)
 {
+  // Initialize symbol converter for hover messages
+  symbolConverter = new SymbolConverter(context.extensionUri.fsPath)
+
   function decoration(options: DecorationRenderOptions): TextEditorDecorationType
   {
     const typ = window.createTextEditorDecorationType(options)
@@ -170,21 +197,23 @@ export function close_document(document: TextDocument)
   document_decorations.delete(document.uri.toString())
 }
 
-export function apply_decoration(decorations: Document_Decorations)
+export async function apply_decoration(decorations: Document_Decorations)
 {
   const uri = Uri.parse(decorations.uri)
 
   for (const decoration of decorations.entries) {
     const typ = types.get(decoration.type)
     if (typ) {
-      const content: DecorationOptions[] = decoration.content.map(opt =>
-        {
-          const r = opt.range
-          return {
-            range: new Range(r[0], r[1], r[2], r[3]),
-            hoverMessage: opt.hover_message
-          }
+      const content: DecorationOptions[] = []
+
+      for (const opt of decoration.content) {
+        const r = opt.range
+        const convertedHoverMessage = await convertHoverMessage(opt.hover_message)
+        content.push({
+          range: new Range(r[0], r[1], r[2], r[3]),
+          hoverMessage: convertedHoverMessage
         })
+      }
 
       const document = document_decorations.get(uri.toString()) || new Map<string, Content>()
       document.set(decoration.type, content)

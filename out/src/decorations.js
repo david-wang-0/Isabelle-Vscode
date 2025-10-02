@@ -46,6 +46,29 @@ exports.touch_document = touch_document;
 const vscode_1 = require("vscode");
 const vscode_2 = require("vscode");
 const vscode_lib = __importStar(require("./vscode_lib"));
+const symbol_converter_1 = require("./symbol_converter");
+/* symbol converter for hover messages */
+let symbolConverter;
+/* helper function to convert symbols in hover messages */
+async function convertHoverMessage(hoverMessage) {
+    if (!hoverMessage || !symbolConverter) {
+        return hoverMessage;
+    }
+    if (Array.isArray(hoverMessage)) {
+        // Handle array of MarkdownStrings
+        const convertedArray = [];
+        for (const md of hoverMessage) {
+            const convertedValue = await symbolConverter.convertSymbols(md.value);
+            convertedArray.push(new vscode_1.MarkdownString(convertedValue));
+        }
+        return convertedArray;
+    }
+    else {
+        // Handle single MarkdownString
+        const convertedValue = await symbolConverter.convertSymbols(hoverMessage.value);
+        return new vscode_1.MarkdownString(convertedValue);
+    }
+}
 /* known decoration types */
 const background_colors = [
     "unprocessed1",
@@ -104,6 +127,8 @@ const text_overview_colors = [
 /* setup */
 const types = new Map();
 function setup(context) {
+    // Initialize symbol converter for hover messages
+    symbolConverter = new symbol_converter_1.SymbolConverter(context.extensionUri.fsPath);
     function decoration(options) {
         const typ = vscode_1.window.createTextEditorDecorationType(options);
         context.subscriptions.push(typ);
@@ -164,18 +189,20 @@ const document_decorations = new Map();
 function close_document(document) {
     document_decorations.delete(document.uri.toString());
 }
-function apply_decoration(decorations) {
+async function apply_decoration(decorations) {
     const uri = vscode_1.Uri.parse(decorations.uri);
     for (const decoration of decorations.entries) {
         const typ = types.get(decoration.type);
         if (typ) {
-            const content = decoration.content.map(opt => {
+            const content = [];
+            for (const opt of decoration.content) {
                 const r = opt.range;
-                return {
+                const convertedHoverMessage = await convertHoverMessage(opt.hover_message);
+                content.push({
                     range: new vscode_2.Range(r[0], r[1], r[2], r[3]),
-                    hoverMessage: opt.hover_message
-                };
-            });
+                    hoverMessage: convertedHoverMessage
+                });
+            }
             const document = document_decorations.get(uri.toString()) || new Map();
             document.set(decoration.type, content);
             document_decorations.set(uri.toString(), document);
