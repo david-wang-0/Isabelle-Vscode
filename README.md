@@ -1,50 +1,51 @@
-# Isabelle2025 Extension for Visual Studio Code 1.104
+# Isabelle/VSCode Prover IDE
 
-This repository contains the Isabelle2025 extension for Visual Studio Code, including symbol snippets and configuration files.
+## General notes
 
-## English Installation Guide
+This is the Isabelle/VSCode extension to connect VSCodium to
+Isabelle/PIDE. The application is invoked via `isabelle vscode` on the
+command-line. It takes care about configuring the extension and user
+settings.
 
-1. Install the `isabelle-vscode-2.0.0.vsix` extension file in VS Code
-   - Open VS Code
-   - Go to Extensions view (Ctrl+Shift+X)
-   - Click the "..." menu and select "Install from VSIX..."
-   - Select the `isabelle-vscode-2.0.0.vsix` file
+The implementation is centered around the VSCode Language Server
+Protocol (LSP), but there are many add-ons that are specific to
+Isabelle/PIDE. Moreover, there are important patches to the VSCodium
+code-base itself, e.g. to support the UTF-8-Isabelle encoding for
+mathematical symbols and to incorporate the corresponding Isabelle
+fonts. It is unlikely that this extension will with regular VSCode nor
+with any other LSP-based editor.
 
-2. Copy the `isabelle-symbols.code-snippets` file to your workspace's `.vscode` folder
-   - Create a `.vscode` folder in your project root if it doesn't exist
-   - Place the snippets file inside this folder
+Isabelle/VSCode works best when opening an Isabelle project directory
+as a "workspace", with explorer access to the sources.  Afterwards it
+is possible to edit `.thy` and `.ML` files with semantic checking by
+the prover in the background, similar to Isabelle/jEdit. There is also
+support for other file formats, e.g. `bib` for bibliographic
+databases, which may be combined with a regular VSCode extension for
+LaTeX/BibTeX.
 
-3. Configure the Isabelle extension settings:
-   - Open VS Code settings (Ctrl+,)
-   - Search for "Isabelle: Home"
-   - Set the path to your Isabelle installation directory: `<installation-directory>\Isabelle2025`
 
-4. For Windows users only:
-   - Add the environment variable `CYGWIN_ROOT` with value: `<installation-directory>\Isabelle2025\contrib\cygwin`
-   - This step is not required for macOS users
+## Known limitations of Isabelle/VSCode
 
-## 中文安装指南
+  * Lack of formal editor perspective in VSCode: only the cursor position is
+    used (with some surrounding lines of text).
 
-1. 将 vsix 安装至 vscode
-   - 打开 VS Code
-   - 进入扩展视图 (Ctrl+Shift+X)
-   - 点击 "..." 菜单并选择 "从 VSIX 安装..."
-   - 选择 `isabelle-vscode-2.0.0.vsix` 文件
+  * Lack of pretty-printing (logical line breaks) according to window and font
+    dimensions.
 
-2. 在工作目录的 .vscode 文件夹中放入 isabelle-symbols.code-snippets 文件
-   - 如果项目根目录没有 `.vscode` 文件夹，请先创建
-   - 将代码片段文件放入该文件夹
+  * Big theory files may cause problems to the VSCode rendering engine, since
+    messages and text decorations are applied to the text as a whole (cf. the
+    minimap view).
 
-3. 进入 Isabelle/VSCode 插件设置，将 Isabelle: Home 设置为你的 Isabelle 安装目录：`<安装目录>\Isabelle2025`
+  * Overall lack of features and refinements compared to Isabelle/jEdit.
 
-4. Windows 需要在环境变量中手动添加 `CYGWIN_ROOT : <安装目录>\Isabelle2025\contrib\cygwin`，MacOS 似乎不需要这一步
 
-## Files Included
 
-- `isabelle-vscode-2.0.0.vsix` - The Isabelle extension package for VS Code
-- `.vscode/isabelle-symbols.code-snippets` - Symbol snippets for Isabelle syntax
+## Compile Steps
 
-## Requirements
+```powershell
+npm install
+npm run compile
+npm install -g @vscode/vsce
+vsce package
+```
 
-- Visual Studio Code 1.104 or later
-- Isabelle2025 installation
