@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "Bash(npm run compile:*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Read(//d/Isabelle2025/Isabelle2025/src/Tools/VSCode/src/**)",
+      "Read(//d/Isabelle2025/Isabelle2025/src/Tools/VSCode/**)",
+      "Read(//d/Isabelle2025/Isabelle2025/src/**)",
+      "Bash(find:*)"
     ],
     "deny": [],
     "ask": []

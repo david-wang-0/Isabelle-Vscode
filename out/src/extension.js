@@ -219,6 +219,14 @@ async function activate(context) {
         context.subscriptions.push(vscode_1.window.registerWebviewViewProvider(output_view_1.Output_View_Provider.view_type, provider));
         language_client.start().then(() => {
             language_client.onNotification(lsp.dynamic_output_type, async (params) => await provider.update_content(params.content));
+            language_client.onNotification(lsp.state_output_type, async (params) => await provider.update_proof_state(params.content));
+            // Monitor cursor changes to ensure proof state is updated
+            context.subscriptions.push(vscode_1.window.onDidChangeTextEditorSelection(async () => {
+                // Give server time to send updates, then check if proof state should be cleared
+                setTimeout(async () => {
+                    await provider.check_and_clear_old_proof_state(1500);
+                }, 500);
+            }));
         });
         /* state panel */
         context.subscriptions.push(vscode_1.commands.registerCommand("isabelle.state", uri => state_panel.init(uri)));

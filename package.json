@@ -209,6 +209,16 @@
                     ],
                     "description": "Symbol replacement mode."
                 },
+                "isabelle.options": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type": "string"
+                    },
+                    "default": {
+                        "editor_output_state": "true"
+                    },
+                    "description": "Isabelle options for the language server."
+                },
                 "isabelle.text_color": {
                     "type": "object",
                     "additionalProperties": {

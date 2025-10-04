@@ -252,6 +252,18 @@ export async function activate(context: ExtensionContext)
     {
       language_client.onNotification(lsp.dynamic_output_type,
         async params => await provider.update_content(params.content))
+
+      language_client.onNotification(lsp.state_output_type,
+        async params => await provider.update_proof_state(params.content))
+
+      // Monitor cursor changes to ensure proof state is updated
+      context.subscriptions.push(
+        window.onDidChangeTextEditorSelection(async () => {
+          // Give server time to send updates, then check if proof state should be cleared
+          setTimeout(async () => {
+            await provider.check_and_clear_old_proof_state(1500)
+          }, 500)
+        }))
     })
 
 
