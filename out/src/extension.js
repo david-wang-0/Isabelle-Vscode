@@ -53,6 +53,7 @@ const vscode_1 = require("vscode");
 const node_1 = require("vscode-languageclient/node");
 const output_view_1 = require("./output_view");
 const script_decorations_1 = require("./script_decorations");
+const function_completion_1 = require("./function_completion");
 let last_caret_update = {};
 function print_value(x) {
     return typeof (x) === "string" ? x : JSON.stringify(x);
@@ -234,6 +235,15 @@ async function activate(context) {
         /* preview panel */
         context.subscriptions.push(vscode_1.commands.registerCommand("isabelle.preview", uri => preview_panel.request(uri, false)), vscode_1.commands.registerCommand("isabelle.preview-split", uri => preview_panel.request(uri, true)));
         language_client.start().then(() => preview_panel.setup(context, language_client));
+        /* function definition completion */
+        const functionBodyProvider = new function_completion_1.FunctionBodyCompletionProvider();
+        context.subscriptions.push(vscode_1.languages.registerCompletionItemProvider({ scheme: 'file', language: 'isabelle' }, new function_completion_1.TypeSignatureCompletionProvider(), ' ' // Trigger on space after ::
+        ), 
+        // Register with newline trigger for automatic completion after line break
+        vscode_1.languages.registerCompletionItemProvider({ scheme: 'file', language: 'isabelle' }, functionBodyProvider, '\n' // Trigger on newline
+        ), 
+        // Register without trigger characters to support manual completion (Ctrl+Space) everywhere including inside strings
+        vscode_1.languages.registerCompletionItemProvider({ scheme: 'file', language: 'isabelle' }, functionBodyProvider));
         /* spell checker */
         language_client.start().then(() => {
             context.subscriptions.push(vscode_1.commands.registerCommand("isabelle.include-word", uri => language_client.sendNotification(lsp.include_word_type)), vscode_1.commands.registerCommand("isabelle.include-word-permanently", uri => language_client.sendNotification(lsp.include_word_permanently_type)), vscode_1.commands.registerCommand("isabelle.exclude-word", uri => language_client.sendNotification(lsp.exclude_word_type)), vscode_1.commands.registerCommand("isabelle.exclude-word-permanently", uri => language_client.sendNotification(lsp.exclude_word_permanently_type)), vscode_1.commands.registerCommand("isabelle.reset-words", uri => language_client.sendNotification(lsp.reset_words_type)));

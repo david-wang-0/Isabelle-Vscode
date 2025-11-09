@@ -172,10 +172,24 @@
         ],
         "configurationDefaults": {
             "[isabelle]": {
-                "files.encoding": "utf8isabelle"
+                "files.encoding": "utf8isabelle",
+                "editor.quickSuggestions": {
+                    "other": true,
+                    "comments": false,
+                    "strings": true
+                },
+                "editor.wordBasedSuggestions": "matchingDocuments",
+                "editor.suggest.showWords": true
             },
             "[isabelle-ml]": {
-                "files.encoding": "utf8isabelle"
+                "files.encoding": "utf8isabelle",
+                "editor.quickSuggestions": {
+                    "other": true,
+                    "comments": false,
+                    "strings": true
+                },
+                "editor.wordBasedSuggestions": "matchingDocuments",
+                "editor.suggest.showWords": false
             }
         },
         "grammars": [

@@ -16,10 +16,11 @@ import * as preview_panel from './preview_panel'
 import * as lsp from './lsp'
 import * as state_panel from './state_panel'
 import { Uri, TextEditor, ViewColumn, Selection, Position, ExtensionContext, workspace, window,
-  commands, ProgressLocation, MarkdownString } from 'vscode'
+  commands, ProgressLocation, MarkdownString, languages } from 'vscode'
 import { LanguageClient, LanguageClientOptions, ServerOptions } from 'vscode-languageclient/node'
 import { Output_View_Provider } from './output_view'
 import { register_script_decorations } from './script_decorations'
+import { TypeSignatureCompletionProvider, FunctionBodyCompletionProvider } from './function_completion'
 
 
 let last_caret_update: lsp.Caret_Update = {}
@@ -282,6 +283,30 @@ export async function activate(context: ExtensionContext)
       commands.registerCommand("isabelle.preview-split", uri => preview_panel.request(uri, true)))
 
     language_client.start().then(() => preview_panel.setup(context, language_client))
+
+
+    /* function definition completion */
+
+    const functionBodyProvider = new FunctionBodyCompletionProvider();
+
+    context.subscriptions.push(
+      languages.registerCompletionItemProvider(
+        { scheme: 'file', language: 'isabelle' },
+        new TypeSignatureCompletionProvider(),
+        ' '  // Trigger on space after ::
+      ),
+      // Register with newline trigger for automatic completion after line break
+      languages.registerCompletionItemProvider(
+        { scheme: 'file', language: 'isabelle' },
+        functionBodyProvider,
+        '\n'  // Trigger on newline
+      ),
+      // Register without trigger characters to support manual completion (Ctrl+Space) everywhere including inside strings
+      languages.registerCompletionItemProvider(
+        { scheme: 'file', language: 'isabelle' },
+        functionBodyProvider
+      )
+    )
 
 
     /* spell checker */
