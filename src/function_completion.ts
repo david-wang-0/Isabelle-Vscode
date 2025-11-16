@@ -15,6 +15,7 @@ import {
   SnippetString,
   workspace
 } from 'vscode';
+import * as lsp from './lsp'
 
 // Keywords that start a function definition
 const FUNCTION_KEYWORDS = ['fun', 'function', 'primrec', 'definition', 'primcorec', 'corec'];
@@ -281,12 +282,45 @@ export class TheoryStructureCompletionProvider implements CompletionItemProvider
  */
 export class ProofOutlineCompletionProvider implements CompletionItemProvider {
   private cachedProofOutline: string | null = null;
+  // Track the caret position (uri + line) for which the outline was provided
+  private outlineCaret: lsp.Caret_Update | null = null;
 
   /**
    * Update the cached proof outline
    */
-  public updateProofOutline(outline: string | null) {
+  public updateProofOutline(outline: string | null, caret?: lsp.Caret_Update) {
     this.cachedProofOutline = outline;
+    this.outlineCaret = caret ? { ...caret } : null;
+  }
+
+  /**
+   * Clear cached outline if caret moved away from the proof for which the outline was produced.
+   * A simple heuristic: clear when uri differs or when line differs by more than a small threshold.
+   */
+  public clearIfCaretMoved(newCaret: lsp.Caret_Update | undefined) {
+    if (!this.cachedProofOutline || !this.outlineCaret) return;
+    if (!newCaret || !newCaret.uri) {
+      // no caret info -> be conservative and clear
+      this.cachedProofOutline = null;
+      this.outlineCaret = null;
+      return;
+    }
+
+    if (this.outlineCaret.uri !== newCaret.uri) {
+      this.cachedProofOutline = null;
+      this.outlineCaret = null;
+      return;
+    }
+
+    // If line information is available, clear when moved sufficiently far away
+    if (typeof this.outlineCaret.line === 'number' && typeof newCaret.line === 'number') {
+      const distance = Math.abs(this.outlineCaret.line - newCaret.line);
+      if (distance > 5) {
+        this.cachedProofOutline = null;
+        this.outlineCaret = null;
+        return;
+      }
+    }
   }
 
   provideCompletionItems(document: TextDocument, position: Position): CompletionItem[] {

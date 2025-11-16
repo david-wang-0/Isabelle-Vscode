@@ -227,7 +227,8 @@ async function activate(context) {
                 if (content && content.includes('Proof outline with cases:')) {
                     const match = content.match(/Proof outline with cases:\s*([\s\S]*?)(?=\n\n|\n*$)/);
                     if (match && match[1]) {
-                        proofOutlineProvider.updateProofOutline(match[1].trim());
+                        // Associate the proof outline with the last known caret position
+                        proofOutlineProvider.updateProofOutline(match[1].trim(), last_caret_update);
                     }
                 }
             });
@@ -237,6 +238,13 @@ async function activate(context) {
                 // Give server time to send updates, then check if proof state should be cleared
                 setTimeout(async () => {
                     await provider.check_and_clear_old_proof_state(1500);
+                    // Also clear proof-outline cache if the caret moved away from the proof
+                    try {
+                        proofOutlineProvider.clearIfCaretMoved(last_caret_update);
+                    }
+                    catch (e) {
+                        // ignore
+                    }
                 }, 500);
             }));
         });
