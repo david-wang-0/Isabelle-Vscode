@@ -282,7 +282,7 @@ export class TheoryStructureCompletionProvider implements CompletionItemProvider
         // $2 -> inside theory body before end
         // We replace the leading whitespace the user typed (rangeToReplace covers it)
         item.insertText = new SnippetString(
-          `theory ${fileName}\n  imports $1\nbegin\n\n$2\n\nend`
+          `theory ${fileName}\n  imports Complex_Main\$1\nbegin\n\n\$2\n\nend`
         );
         item.range = rangeToReplace; // remove any initial spaces the user typed
         item.detail = `Insert full theory skeleton for ${fileName}`;
@@ -300,10 +300,12 @@ export class TheoryStructureCompletionProvider implements CompletionItemProvider
     // Case 1: Previous line starts with 'theory' - add 'imports'
     if (/^\s*theory\s+\w+/.test(previousLine.trim())) {
       const item = new CompletionItem('imports', CompletionItemKind.Keyword);
-      item.insertText = new SnippetString('  imports $1');
+      item.insertText = new SnippetString('  imports ${1:Complex_Main}');
       item.range = rangeToReplace;
       item.detail = 'Theory imports section';
       item.documentation = 'Add imports declaration after theory header';
+      // Allow pressing space to commit the completion and accept the default package
+      item.commitCharacters = [' '];
       item.sortText = '0';
       return [item];
     }
