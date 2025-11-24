@@ -532,6 +532,48 @@ export async function activate(context: ExtensionContext)
     );
 
 
+        /* reverse symbol conversion */
+
+    async function convertUnicodeToIsabelle() {
+      const editor = window.activeTextEditor;
+      if (!editor) {
+        window.showWarningMessage('Please open a file first');
+        return;
+      }
+
+      try {
+        const symbolConverter = new (await import('./symbol_converter')).SymbolConverter(context.extensionUri.fsPath);
+        
+        // Determine range to convert: selection or full document
+        const selection = editor.selection;
+        const hasSelection = !selection.isEmpty;
+        const range = hasSelection 
+          ? new Range(selection.start, selection.end)
+          : new Range(editor.document.positionAt(0), editor.document.positionAt(editor.document.getText().length));
+        
+        const textToConvert = editor.document.getText(range);
+        const convertedText = await symbolConverter.convertUnicodeToIsabelle(textToConvert);
+
+        if (textToConvert !== convertedText) {
+          const edit = new WorkspaceEdit();
+          edit.replace(editor.document.uri, range, convertedText);
+          await workspace.applyEdit(edit);
+          
+          const msg = hasSelection ? 'Converted selection to Isabelle symbols' : 'Converted document to Isabelle symbols';
+          window.showInformationMessage(msg);
+        } else {
+          window.showInformationMessage('No Unicode symbols found to convert');
+        }
+      } catch (error) {
+        window.showErrorMessage(`Failed to convert symbols: ${error}`);
+      }
+    }
+
+    context.subscriptions.push(
+      commands.registerCommand('isabelle.convert-unicode-to-isabelle', convertUnicodeToIsabelle)
+    );
+
+
         /* spell checker */
 
         language_client.start().then(() =>

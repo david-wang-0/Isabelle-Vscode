@@ -416,6 +416,39 @@ async function activate(context) {
                 }
             }
             context.subscriptions.push(vscode_1.commands.registerCommand('isabelle.convert-symbols', convertSymbolsToUnicode));
+            /* reverse symbol conversion */
+            async function convertUnicodeToIsabelle() {
+                const editor = vscode_1.window.activeTextEditor;
+                if (!editor) {
+                    vscode_1.window.showWarningMessage('Please open a file first');
+                    return;
+                }
+                try {
+                    const symbolConverter = new (await Promise.resolve().then(() => __importStar(require('./symbol_converter')))).SymbolConverter(context.extensionUri.fsPath);
+                    // Determine range to convert: selection or full document
+                    const selection = editor.selection;
+                    const hasSelection = !selection.isEmpty;
+                    const range = hasSelection
+                        ? new vscode_1.Range(selection.start, selection.end)
+                        : new vscode_1.Range(editor.document.positionAt(0), editor.document.positionAt(editor.document.getText().length));
+                    const textToConvert = editor.document.getText(range);
+                    const convertedText = await symbolConverter.convertUnicodeToIsabelle(textToConvert);
+                    if (textToConvert !== convertedText) {
+                        const edit = new vscode_1.WorkspaceEdit();
+                        edit.replace(editor.document.uri, range, convertedText);
+                        await vscode_1.workspace.applyEdit(edit);
+                        const msg = hasSelection ? 'Converted selection to Isabelle symbols' : 'Converted document to Isabelle symbols';
+                        vscode_1.window.showInformationMessage(msg);
+                    }
+                    else {
+                        vscode_1.window.showInformationMessage('No Unicode symbols found to convert');
+                    }
+                }
+                catch (error) {
+                    vscode_1.window.showErrorMessage(`Failed to convert symbols: ${error}`);
+                }
+            }
+            context.subscriptions.push(vscode_1.commands.registerCommand('isabelle.convert-unicode-to-isabelle', convertUnicodeToIsabelle));
             /* spell checker */
             language_client.start().then(() => {
                 context.subscriptions.push(vscode_1.commands.registerCommand("isabelle.include-word", uri => language_client.sendNotification(lsp.include_word_type)), vscode_1.commands.registerCommand("isabelle.include-word-permanently", uri => language_client.sendNotification(lsp.include_word_permanently_type)), vscode_1.commands.registerCommand("isabelle.exclude-word", uri => language_client.sendNotification(lsp.exclude_word_type)), vscode_1.commands.registerCommand("isabelle.exclude-word-permanently", uri => language_client.sendNotification(lsp.exclude_word_permanently_type)), vscode_1.commands.registerCommand("isabelle.reset-words", uri => language_client.sendNotification(lsp.reset_words_type)));

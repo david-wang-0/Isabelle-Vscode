@@ -10,7 +10,7 @@
         "document preparation"
     ],
     "icon": "isabelle.png",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "publisher": "ponder-j",
     "license": "MIT",
     "repository": {
@@ -78,6 +78,12 @@
                 "icon": "$(pass-filled)"
             },
             {
+                "command": "isabelle.convert-unicode-to-isabelle",
+                "title": "Convert Unicode to Isabelle Symbols",
+                "category": "Isabelle",
+                "icon": "$(replace)"
+            },
+            {
                 "command": "isabelle.include-word",
                 "title": "Include word",
                 "category": "Isabelle"
@@ -138,6 +144,11 @@
                 {
                     "when": "editorLangId == isabelle",
                     "command": "isabelle.convert-symbols",
+                    "group": "navigation"
+                },
+                {
+                    "when": "editorLangId == isabelle",
+                    "command": "isabelle.convert-unicode-to-isabelle",
                     "group": "navigation"
                 }
             ],
@@ -346,13 +357,15 @@
     "scripts": {
         "vscode:prepublish": "yarn run compile",
         "compile": "tsc -p ./",
-        "watch": "tsc -watch -p ./"
+        "watch": "tsc -watch -p ./",
+        "test": "mocha -r ts-node/register test/**/*.test.ts"
     },
     "devDependencies": {
         "@types/mocha": "^10.0.0",
         "@types/node": "^20.0.0",
         "@types/vscode": "^1.104.0",
         "mocha": "^10.0.0",
+        "ts-node": "^10.9.2",
         "typescript": "^5.0.0"
     },
     "dependencies": {

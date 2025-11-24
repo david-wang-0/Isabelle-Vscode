@@ -1,4 +1,14 @@
 {
+  "sledgehammer": {
+    "prefix": [
+      "sledgehammer"
+    ],
+    "body": [
+      "sledgehammer"
+    ],
+    "description": "Hammer it!!!",
+    "sortText": "00000"
+  },
   "zero 𝟬": {
     "prefix": [
       "\\zero"
