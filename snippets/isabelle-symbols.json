@@ -1,0 +1,4527 @@
+{
+  "sledgehammer": {
+    "prefix": [
+      "sledgehammer"
+    ],
+    "body": [
+      "sledgehammer"
+    ],
+    "description": "Hammer it!!!",
+    "sortText": "00000"
+  },
+  "zero 𝟬": {
+    "prefix": [
+      "\\zero"
+    ],
+    "body": [
+      "\\<zero>"
+    ],
+    "description": "Mathematical bold digit zero : 𝟬",
+    "sortText": "00000"
+  },
+  "one 𝟭": {
+    "prefix": [
+      "\\one"
+    ],
+    "body": [
+      "\\<one>"
+    ],
+    "description": "Mathematical bold digit one : 𝟭",
+    "sortText": "00000"
+  },
+  "two 𝟮": {
+    "prefix": [
+      "\\two"
+    ],
+    "body": [
+      "\\<two>"
+    ],
+    "description": "Mathematical bold digit two : 𝟮",
+    "sortText": "00000"
+  },
+  "three 𝟯": {
+    "prefix": [
+      "\\three"
+    ],
+    "body": [
+      "\\<three>"
+    ],
+    "description": "Mathematical bold digit three : 𝟯",
+    "sortText": "00000"
+  },
+  "four 𝟰": {
+    "prefix": [
+      "\\four"
+    ],
+    "body": [
+      "\\<four>"
+    ],
+    "description": "Mathematical bold digit four : 𝟰",
+    "sortText": "00000"
+  },
+  "five 𝟱": {
+    "prefix": [
+      "\\five"
+    ],
+    "body": [
+      "\\<five>"
+    ],
+    "description": "Mathematical bold digit five : 𝟱",
+    "sortText": "00000"
+  },
+  "six 𝟲": {
+    "prefix": [
+      "\\six"
+    ],
+    "body": [
+      "\\<six>"
+    ],
+    "description": "Mathematical bold digit six : 𝟲",
+    "sortText": "00000"
+  },
+  "seven 𝟳": {
+    "prefix": [
+      "\\seven"
+    ],
+    "body": [
+      "\\<seven>"
+    ],
+    "description": "Mathematical bold digit seven : 𝟳",
+    "sortText": "00000"
+  },
+  "eight 𝟴": {
+    "prefix": [
+      "\\eight"
+    ],
+    "body": [
+      "\\<eight>"
+    ],
+    "description": "Mathematical bold digit eight : 𝟴",
+    "sortText": "00000"
+  },
+  "nine 𝟵": {
+    "prefix": [
+      "\\nine"
+    ],
+    "body": [
+      "\\<nine>"
+    ],
+    "description": "Mathematical bold digit nine : 𝟵",
+    "sortText": "00000"
+  },
+  "A 𝒜": {
+    "prefix": [
+      "\\A"
+    ],
+    "body": [
+      "\\<A>"
+    ],
+    "description": "Mathematical script capital A : 𝒜",
+    "sortText": "00000"
+  },
+  "B ℬ": {
+    "prefix": [
+      "\\B"
+    ],
+    "body": [
+      "\\<B>"
+    ],
+    "description": "Script capital B : ℬ",
+    "sortText": "00000"
+  },
+  "C 𝒞": {
+    "prefix": [
+      "\\C"
+    ],
+    "body": [
+      "\\<C>"
+    ],
+    "description": "Mathematical script capital C : 𝒞",
+    "sortText": "00000"
+  },
+  "D 𝒟": {
+    "prefix": [
+      "\\D"
+    ],
+    "body": [
+      "\\<D>"
+    ],
+    "description": "Mathematical script capital D : 𝒟",
+    "sortText": "00000"
+  },
+  "E ℰ": {
+    "prefix": [
+      "\\E"
+    ],
+    "body": [
+      "\\<E>"
+    ],
+    "description": "Script capital E : ℰ",
+    "sortText": "00000"
+  },
+  "F ℱ": {
+    "prefix": [
+      "\\F"
+    ],
+    "body": [
+      "\\<F>"
+    ],
+    "description": "Script capital F : ℱ",
+    "sortText": "00000"
+  },
+  "G 𝒢": {
+    "prefix": [
+      "\\G"
+    ],
+    "body": [
+      "\\<G>"
+    ],
+    "description": "Mathematical script capital G : 𝒢",
+    "sortText": "00000"
+  },
+  "H ℋ": {
+    "prefix": [
+      "\\H"
+    ],
+    "body": [
+      "\\<H>"
+    ],
+    "description": "Script capital H : ℋ",
+    "sortText": "00000"
+  },
+  "I ℐ": {
+    "prefix": [
+      "\\I"
+    ],
+    "body": [
+      "\\<I>"
+    ],
+    "description": "Script capital I : ℐ",
+    "sortText": "00000"
+  },
+  "J 𝒥": {
+    "prefix": [
+      "\\J"
+    ],
+    "body": [
+      "\\<J>"
+    ],
+    "description": "Mathematical script capital J : 𝒥",
+    "sortText": "00000"
+  },
+  "K 𝒦": {
+    "prefix": [
+      "\\K"
+    ],
+    "body": [
+      "\\<K>"
+    ],
+    "description": "Mathematical script capital K : 𝒦",
+    "sortText": "00000"
+  },
+  "L ℒ": {
+    "prefix": [
+      "\\L"
+    ],
+    "body": [
+      "\\<L>"
+    ],
+    "description": "Script capital L : ℒ",
+    "sortText": "00000"
+  },
+  "M ℳ": {
+    "prefix": [
+      "\\M"
+    ],
+    "body": [
+      "\\<M>"
+    ],
+    "description": "Script capital M : ℳ",
+    "sortText": "00000"
+  },
+  "N 𝒩": {
+    "prefix": [
+      "\\N"
+    ],
+    "body": [
+      "\\<N>"
+    ],
+    "description": "Mathematical script capital N : 𝒩",
+    "sortText": "00000"
+  },
+  "O 𝒪": {
+    "prefix": [
+      "\\O"
+    ],
+    "body": [
+      "\\<O>"
+    ],
+    "description": "Mathematical script capital O : 𝒪",
+    "sortText": "00000"
+  },
+  "P 𝒫": {
+    "prefix": [
+      "\\P"
+    ],
+    "body": [
+      "\\<P>"
+    ],
+    "description": "Mathematical script capital P : 𝒫",
+    "sortText": "00000"
+  },
+  "Q 𝒬": {
+    "prefix": [
+      "\\Q"
+    ],
+    "body": [
+      "\\<Q>"
+    ],
+    "description": "Mathematical script capital Q : 𝒬",
+    "sortText": "00000"
+  },
+  "R ℛ": {
+    "prefix": [
+      "\\R"
+    ],
+    "body": [
+      "\\<R>"
+    ],
+    "description": "Script capital R : ℛ",
+    "sortText": "00000"
+  },
+  "S 𝒮": {
+    "prefix": [
+      "\\S"
+    ],
+    "body": [
+      "\\<S>"
+    ],
+    "description": "Mathematical script capital S : 𝒮",
+    "sortText": "00000"
+  },
+  "T 𝒯": {
+    "prefix": [
+      "\\T"
+    ],
+    "body": [
+      "\\<T>"
+    ],
+    "description": "Mathematical script capital T : 𝒯",
+    "sortText": "00000"
+  },
+  "U 𝒰": {
+    "prefix": [
+      "\\U"
+    ],
+    "body": [
+      "\\<U>"
+    ],
+    "description": "Mathematical script capital U : 𝒰",
+    "sortText": "00000"
+  },
+  "V 𝒱": {
+    "prefix": [
+      "\\V"
+    ],
+    "body": [
+      "\\<V>"
+    ],
+    "description": "Mathematical script capital V : 𝒱",
+    "sortText": "00000"
+  },
+  "W 𝒲": {
+    "prefix": [
+      "\\W"
+    ],
+    "body": [
+      "\\<W>"
+    ],
+    "description": "Mathematical script capital W : 𝒲",
+    "sortText": "00000"
+  },
+  "X 𝒳": {
+    "prefix": [
+      "\\X"
+    ],
+    "body": [
+      "\\<X>"
+    ],
+    "description": "Mathematical script capital X : 𝒳",
+    "sortText": "00000"
+  },
+  "Y 𝒴": {
+    "prefix": [
+      "\\Y"
+    ],
+    "body": [
+      "\\<Y>"
+    ],
+    "description": "Mathematical script capital Y : 𝒴",
+    "sortText": "00000"
+  },
+  "Z 𝒵": {
+    "prefix": [
+      "\\Z"
+    ],
+    "body": [
+      "\\<Z>"
+    ],
+    "description": "Mathematical script capital Z : 𝒵",
+    "sortText": "00000"
+  },
+  "a 𝓪": {
+    "prefix": [
+      "\\a"
+    ],
+    "body": [
+      "\\<a>"
+    ],
+    "description": "Mathematical script small a : 𝓪",
+    "sortText": "00000"
+  },
+  "b 𝓫": {
+    "prefix": [
+      "\\b"
+    ],
+    "body": [
+      "\\<b>"
+    ],
+    "description": "Mathematical script small b : 𝓫",
+    "sortText": "00000"
+  },
+  "c 𝓬": {
+    "prefix": [
+      "\\c"
+    ],
+    "body": [
+      "\\<c>"
+    ],
+    "description": "Mathematical script small c : 𝓬",
+    "sortText": "00000"
+  },
+  "d 𝓭": {
+    "prefix": [
+      "\\d"
+    ],
+    "body": [
+      "\\<d>"
+    ],
+    "description": "Mathematical script small d : 𝓭",
+    "sortText": "00000"
+  },
+  "e 𝓮": {
+    "prefix": [
+      "\\e"
+    ],
+    "body": [
+      "\\<e>"
+    ],
+    "description": "Mathematical script small e : 𝓮",
+    "sortText": "00000"
+  },
+  "f 𝓯": {
+    "prefix": [
+      "\\f"
+    ],
+    "body": [
+      "\\<f>"
+    ],
+    "description": "Mathematical script small f : 𝓯",
+    "sortText": "00000"
+  },
+  "g 𝓰": {
+    "prefix": [
+      "\\g"
+    ],
+    "body": [
+      "\\<g>"
+    ],
+    "description": "Mathematical script small g : 𝓰",
+    "sortText": "00000"
+  },
+  "h 𝓱": {
+    "prefix": [
+      "\\h"
+    ],
+    "body": [
+      "\\<h>"
+    ],
+    "description": "Mathematical script small h : 𝓱",
+    "sortText": "00000"
+  },
+  "i 𝓲": {
+    "prefix": [
+      "\\i"
+    ],
+    "body": [
+      "\\<i>"
+    ],
+    "description": "Mathematical script small i : 𝓲",
+    "sortText": "00000"
+  },
+  "j 𝓳": {
+    "prefix": [
+      "\\j"
+    ],
+    "body": [
+      "\\<j>"
+    ],
+    "description": "Mathematical script small j : 𝓳",
+    "sortText": "00000"
+  },
+  "k 𝓴": {
+    "prefix": [
+      "\\k"
+    ],
+    "body": [
+      "\\<k>"
+    ],
+    "description": "Mathematical script small k : 𝓴",
+    "sortText": "00000"
+  },
+  "l 𝓵": {
+    "prefix": [
+      "\\l"
+    ],
+    "body": [
+      "\\<l>"
+    ],
+    "description": "Mathematical script small l : 𝓵",
+    "sortText": "00000"
+  },
+  "m 𝓶": {
+    "prefix": [
+      "\\m"
+    ],
+    "body": [
+      "\\<m>"
+    ],
+    "description": "Mathematical script small m : 𝓶",
+    "sortText": "00000"
+  },
+  "n 𝓷": {
+    "prefix": [
+      "\\n"
+    ],
+    "body": [
+      "\\<n>"
+    ],
+    "description": "Mathematical script small n : 𝓷",
+    "sortText": "00000"
+  },
+  "o 𝓸": {
+    "prefix": [
+      "\\o"
+    ],
+    "body": [
+      "\\<o>"
+    ],
+    "description": "Mathematical script small o : 𝓸",
+    "sortText": "00000"
+  },
+  "p 𝓹": {
+    "prefix": [
+      "\\p"
+    ],
+    "body": [
+      "\\<p>"
+    ],
+    "description": "Mathematical script small p : 𝓹",
+    "sortText": "00000"
+  },
+  "q 𝓺": {
+    "prefix": [
+      "\\q"
+    ],
+    "body": [
+      "\\<q>"
+    ],
+    "description": "Mathematical script small q : 𝓺",
+    "sortText": "00000"
+  },
+  "r 𝓻": {
+    "prefix": [
+      "\\r"
+    ],
+    "body": [
+      "\\<r>"
+    ],
+    "description": "Mathematical script small r : 𝓻",
+    "sortText": "00000"
+  },
+  "s 𝓼": {
+    "prefix": [
+      "\\s"
+    ],
+    "body": [
+      "\\<s>"
+    ],
+    "description": "Mathematical script small s : 𝓼",
+    "sortText": "00000"
+  },
+  "t 𝓽": {
+    "prefix": [
+      "\\t"
+    ],
+    "body": [
+      "\\<t>"
+    ],
+    "description": "Mathematical script small t : 𝓽",
+    "sortText": "00000"
+  },
+  "u 𝓾": {
+    "prefix": [
+      "\\u"
+    ],
+    "body": [
+      "\\<u>"
+    ],
+    "description": "Mathematical script small u : 𝓾",
+    "sortText": "00000"
+  },
+  "v 𝓿": {
+    "prefix": [
+      "\\v"
+    ],
+    "body": [
+      "\\<v>"
+    ],
+    "description": "Mathematical script small v : 𝓿",
+    "sortText": "00000"
+  },
+  "w 𝔀": {
+    "prefix": [
+      "\\w"
+    ],
+    "body": [
+      "\\<w>"
+    ],
+    "description": "Mathematical script small w : 𝔀",
+    "sortText": "00000"
+  },
+  "x 𝔁": {
+    "prefix": [
+      "\\x"
+    ],
+    "body": [
+      "\\<x>"
+    ],
+    "description": "Mathematical script small x : 𝔁",
+    "sortText": "00000"
+  },
+  "y 𝔂": {
+    "prefix": [
+      "\\y"
+    ],
+    "body": [
+      "\\<y>"
+    ],
+    "description": "Mathematical script small y : 𝔂",
+    "sortText": "00000"
+  },
+  "z 𝔃": {
+    "prefix": [
+      "\\z"
+    ],
+    "body": [
+      "\\<z>"
+    ],
+    "description": "Mathematical script small z : 𝔃",
+    "sortText": "00000"
+  },
+  "AA 𝔄": {
+    "prefix": [
+      "\\AA"
+    ],
+    "body": [
+      "\\<AA>"
+    ],
+    "description": "Mathematical fraktur capital A : 𝔄",
+    "sortText": "00000"
+  },
+  "BB 𝔅": {
+    "prefix": [
+      "\\BB"
+    ],
+    "body": [
+      "\\<BB>"
+    ],
+    "description": "Mathematical fraktur capital B : 𝔅",
+    "sortText": "00000"
+  },
+  "CC ℭ": {
+    "prefix": [
+      "\\CC"
+    ],
+    "body": [
+      "\\<CC>"
+    ],
+    "description": "Black-letter capital C : ℭ",
+    "sortText": "00000"
+  },
+  "DD 𝔇": {
+    "prefix": [
+      "\\DD"
+    ],
+    "body": [
+      "\\<DD>"
+    ],
+    "description": "Mathematical fraktur capital D : 𝔇",
+    "sortText": "00000"
+  },
+  "EE 𝔈": {
+    "prefix": [
+      "\\EE"
+    ],
+    "body": [
+      "\\<EE>"
+    ],
+    "description": "Mathematical fraktur capital E : 𝔈",
+    "sortText": "00000"
+  },
+  "FF 𝔉": {
+    "prefix": [
+      "\\FF"
+    ],
+    "body": [
+      "\\<FF>"
+    ],
+    "description": "Mathematical fraktur capital F : 𝔉",
+    "sortText": "00000"
+  },
+  "GG 𝔊": {
+    "prefix": [
+      "\\GG"
+    ],
+    "body": [
+      "\\<GG>"
+    ],
+    "description": "Mathematical fraktur capital G : 𝔊",
+    "sortText": "00000"
+  },
+  "HH ℌ": {
+    "prefix": [
+      "\\HH"
+    ],
+    "body": [
+      "\\<HH>"
+    ],
+    "description": "Black-letter capital H : ℌ",
+    "sortText": "00000"
+  },
+  "II ℑ": {
+    "prefix": [
+      "\\II"
+    ],
+    "body": [
+      "\\<II>"
+    ],
+    "description": "Black-letter capital I : ℑ",
+    "sortText": "00000"
+  },
+  "JJ 𝔍": {
+    "prefix": [
+      "\\JJ"
+    ],
+    "body": [
+      "\\<JJ>"
+    ],
+    "description": "Mathematical fraktur capital J : 𝔍",
+    "sortText": "00000"
+  },
+  "KK 𝔎": {
+    "prefix": [
+      "\\KK"
+    ],
+    "body": [
+      "\\<KK>"
+    ],
+    "description": "Mathematical fraktur capital K : 𝔎",
+    "sortText": "00000"
+  },
+  "LL 𝔏": {
+    "prefix": [
+      "\\LL"
+    ],
+    "body": [
+      "\\<LL>"
+    ],
+    "description": "Mathematical fraktur capital L : 𝔏",
+    "sortText": "00000"
+  },
+  "MM 𝔐": {
+    "prefix": [
+      "\\MM"
+    ],
+    "body": [
+      "\\<MM>"
+    ],
+    "description": "Mathematical fraktur capital M : 𝔐",
+    "sortText": "00000"
+  },
+  "NN 𝔑": {
+    "prefix": [
+      "\\NN"
+    ],
+    "body": [
+      "\\<NN>"
+    ],
+    "description": "Mathematical fraktur capital N : 𝔑",
+    "sortText": "00000"
+  },
+  "OO 𝔒": {
+    "prefix": [
+      "\\OO"
+    ],
+    "body": [
+      "\\<OO>"
+    ],
+    "description": "Mathematical fraktur capital O : 𝔒",
+    "sortText": "00000"
+  },
+  "PP 𝔓": {
+    "prefix": [
+      "\\PP"
+    ],
+    "body": [
+      "\\<PP>"
+    ],
+    "description": "Mathematical fraktur capital P : 𝔓",
+    "sortText": "00000"
+  },
+  "QQ 𝔔": {
+    "prefix": [
+      "\\QQ"
+    ],
+    "body": [
+      "\\<QQ>"
+    ],
+    "description": "Mathematical fraktur capital Q : 𝔔",
+    "sortText": "00000"
+  },
+  "RR ℜ": {
+    "prefix": [
+      "\\RR"
+    ],
+    "body": [
+      "\\<RR>"
+    ],
+    "description": "Black-letter capital R : ℜ",
+    "sortText": "00000"
+  },
+  "SS 𝔖": {
+    "prefix": [
+      "\\SS"
+    ],
+    "body": [
+      "\\<SS>"
+    ],
+    "description": "Mathematical fraktur capital S : 𝔖",
+    "sortText": "00000"
+  },
+  "TT 𝔗": {
+    "prefix": [
+      "\\TT"
+    ],
+    "body": [
+      "\\<TT>"
+    ],
+    "description": "Mathematical fraktur capital T : 𝔗",
+    "sortText": "00000"
+  },
+  "UU 𝔘": {
+    "prefix": [
+      "\\UU"
+    ],
+    "body": [
+      "\\<UU>"
+    ],
+    "description": "Mathematical fraktur capital U : 𝔘",
+    "sortText": "00000"
+  },
+  "VV 𝔙": {
+    "prefix": [
+      "\\VV"
+    ],
+    "body": [
+      "\\<VV>"
+    ],
+    "description": "Mathematical fraktur capital V : 𝔙",
+    "sortText": "00000"
+  },
+  "WW 𝔚": {
+    "prefix": [
+      "\\WW"
+    ],
+    "body": [
+      "\\<WW>"
+    ],
+    "description": "Mathematical fraktur capital W : 𝔚",
+    "sortText": "00000"
+  },
+  "XX 𝔛": {
+    "prefix": [
+      "\\XX"
+    ],
+    "body": [
+      "\\<XX>"
+    ],
+    "description": "Mathematical fraktur capital X : 𝔛",
+    "sortText": "00000"
+  },
+  "YY 𝔜": {
+    "prefix": [
+      "\\YY"
+    ],
+    "body": [
+      "\\<YY>"
+    ],
+    "description": "Mathematical fraktur capital Y : 𝔜",
+    "sortText": "00000"
+  },
+  "ZZ ℨ": {
+    "prefix": [
+      "\\ZZ"
+    ],
+    "body": [
+      "\\<ZZ>"
+    ],
+    "description": "Black-letter capital Z : ℨ",
+    "sortText": "00000"
+  },
+  "aa 𝔞": {
+    "prefix": [
+      "\\aa"
+    ],
+    "body": [
+      "\\<aa>"
+    ],
+    "description": "Mathematical fraktur small a : 𝔞",
+    "sortText": "00000"
+  },
+  "bb 𝔟": {
+    "prefix": [
+      "\\bb"
+    ],
+    "body": [
+      "\\<bb>"
+    ],
+    "description": "Mathematical fraktur small b : 𝔟",
+    "sortText": "00000"
+  },
+  "cc 𝔠": {
+    "prefix": [
+      "\\cc"
+    ],
+    "body": [
+      "\\<cc>"
+    ],
+    "description": "Mathematical fraktur small c : 𝔠",
+    "sortText": "00000"
+  },
+  "dd 𝔡": {
+    "prefix": [
+      "\\dd"
+    ],
+    "body": [
+      "\\<dd>"
+    ],
+    "description": "Mathematical fraktur small d : 𝔡",
+    "sortText": "00000"
+  },
+  "ee 𝔢": {
+    "prefix": [
+      "\\ee"
+    ],
+    "body": [
+      "\\<ee>"
+    ],
+    "description": "Mathematical fraktur small e : 𝔢",
+    "sortText": "00000"
+  },
+  "ff 𝔣": {
+    "prefix": [
+      "\\ff"
+    ],
+    "body": [
+      "\\<ff>"
+    ],
+    "description": "Mathematical fraktur small f : 𝔣",
+    "sortText": "00000"
+  },
+  "gg 𝔤": {
+    "prefix": [
+      "\\gg"
+    ],
+    "body": [
+      "\\<gg>"
+    ],
+    "description": "Mathematical fraktur small g : 𝔤",
+    "sortText": "00000"
+  },
+  "hh 𝔥": {
+    "prefix": [
+      "\\hh"
+    ],
+    "body": [
+      "\\<hh>"
+    ],
+    "description": "Mathematical fraktur small h : 𝔥",
+    "sortText": "00000"
+  },
+  "ii 𝔦": {
+    "prefix": [
+      "\\ii"
+    ],
+    "body": [
+      "\\<ii>"
+    ],
+    "description": "Mathematical fraktur small i : 𝔦",
+    "sortText": "00000"
+  },
+  "jj 𝔧": {
+    "prefix": [
+      "\\jj"
+    ],
+    "body": [
+      "\\<jj>"
+    ],
+    "description": "Mathematical fraktur small j : 𝔧",
+    "sortText": "00000"
+  },
+  "kk 𝔨": {
+    "prefix": [
+      "\\kk"
+    ],
+    "body": [
+      "\\<kk>"
+    ],
+    "description": "Mathematical fraktur small k : 𝔨",
+    "sortText": "00000"
+  },
+  "ll 𝔩": {
+    "prefix": [
+      "\\ll"
+    ],
+    "body": [
+      "\\<ll>"
+    ],
+    "description": "Mathematical fraktur small l : 𝔩",
+    "sortText": "00000"
+  },
+  "mm 𝔪": {
+    "prefix": [
+      "\\mm"
+    ],
+    "body": [
+      "\\<mm>"
+    ],
+    "description": "Mathematical fraktur small m : 𝔪",
+    "sortText": "00000"
+  },
+  "nn 𝔫": {
+    "prefix": [
+      "\\nn"
+    ],
+    "body": [
+      "\\<nn>"
+    ],
+    "description": "Mathematical fraktur small n : 𝔫",
+    "sortText": "00000"
+  },
+  "oo 𝔬": {
+    "prefix": [
+      "\\oo"
+    ],
+    "body": [
+      "\\<oo>"
+    ],
+    "description": "Mathematical fraktur small o : 𝔬",
+    "sortText": "00000"
+  },
+  "pp 𝔭": {
+    "prefix": [
+      "\\pp"
+    ],
+    "body": [
+      "\\<pp>"
+    ],
+    "description": "Mathematical fraktur small p : 𝔭",
+    "sortText": "00000"
+  },
+  "qq 𝔮": {
+    "prefix": [
+      "\\qq"
+    ],
+    "body": [
+      "\\<qq>"
+    ],
+    "description": "Mathematical fraktur small q : 𝔮",
+    "sortText": "00000"
+  },
+  "rr 𝔯": {
+    "prefix": [
+      "\\rr"
+    ],
+    "body": [
+      "\\<rr>"
+    ],
+    "description": "Mathematical fraktur small r : 𝔯",
+    "sortText": "00000"
+  },
+  "ss 𝔰": {
+    "prefix": [
+      "\\ss"
+    ],
+    "body": [
+      "\\<ss>"
+    ],
+    "description": "Mathematical fraktur small s : 𝔰",
+    "sortText": "00000"
+  },
+  "tt 𝔱": {
+    "prefix": [
+      "\\tt"
+    ],
+    "body": [
+      "\\<tt>"
+    ],
+    "description": "Mathematical fraktur small t : 𝔱",
+    "sortText": "00000"
+  },
+  "uu 𝔲": {
+    "prefix": [
+      "\\uu"
+    ],
+    "body": [
+      "\\<uu>"
+    ],
+    "description": "Mathematical fraktur small u : 𝔲",
+    "sortText": "00000"
+  },
+  "vv 𝔳": {
+    "prefix": [
+      "\\vv"
+    ],
+    "body": [
+      "\\<vv>"
+    ],
+    "description": "Mathematical fraktur small v : 𝔳",
+    "sortText": "00000"
+  },
+  "ww 𝔴": {
+    "prefix": [
+      "\\ww"
+    ],
+    "body": [
+      "\\<ww>"
+    ],
+    "description": "Mathematical fraktur small w : 𝔴",
+    "sortText": "00000"
+  },
+  "xx 𝔵": {
+    "prefix": [
+      "\\xx"
+    ],
+    "body": [
+      "\\<xx>"
+    ],
+    "description": "Mathematical fraktur small x : 𝔵",
+    "sortText": "00000"
+  },
+  "yy 𝔶": {
+    "prefix": [
+      "\\yy"
+    ],
+    "body": [
+      "\\<yy>"
+    ],
+    "description": "Mathematical fraktur small y : 𝔶",
+    "sortText": "00000"
+  },
+  "zz 𝔷": {
+    "prefix": [
+      "\\zz"
+    ],
+    "body": [
+      "\\<zz>"
+    ],
+    "description": "Mathematical fraktur small z : 𝔷",
+    "sortText": "00000"
+  },
+  "alpha α": {
+    "prefix": [
+      "\\alpha"
+    ],
+    "body": [
+      "\\<alpha>"
+    ],
+    "description": "Greek letter alpha : α",
+    "sortText": "00000"
+  },
+  "beta β": {
+    "prefix": [
+      "\\beta"
+    ],
+    "body": [
+      "\\<beta>"
+    ],
+    "description": "Greek letter beta : β",
+    "sortText": "00000"
+  },
+  "gamma γ": {
+    "prefix": [
+      "\\gamma"
+    ],
+    "body": [
+      "\\<gamma>"
+    ],
+    "description": "Greek letter gamma : γ",
+    "sortText": "00000"
+  },
+  "delta δ": {
+    "prefix": [
+      "\\delta"
+    ],
+    "body": [
+      "\\<delta>"
+    ],
+    "description": "Greek letter delta : δ",
+    "sortText": "00000"
+  },
+  "epsilon ε": {
+    "prefix": [
+      "\\epsilon"
+    ],
+    "body": [
+      "\\<epsilon>"
+    ],
+    "description": "Greek letter epsilon : ε",
+    "sortText": "00000"
+  },
+  "zeta ζ": {
+    "prefix": [
+      "\\zeta"
+    ],
+    "body": [
+      "\\<zeta>"
+    ],
+    "description": "Greek letter zeta : ζ",
+    "sortText": "00000"
+  },
+  "eta η": {
+    "prefix": [
+      "\\eta"
+    ],
+    "body": [
+      "\\<eta>"
+    ],
+    "description": "Greek letter eta : η",
+    "sortText": "00000"
+  },
+  "theta θ": {
+    "prefix": [
+      "\\theta"
+    ],
+    "body": [
+      "\\<theta>"
+    ],
+    "description": "Greek letter theta : θ",
+    "sortText": "00000"
+  },
+  "iota ι": {
+    "prefix": [
+      "\\iota"
+    ],
+    "body": [
+      "\\<iota>"
+    ],
+    "description": "Greek letter iota : ι",
+    "sortText": "00000"
+  },
+  "kappa κ": {
+    "prefix": [
+      "\\kappa"
+    ],
+    "body": [
+      "\\<kappa>"
+    ],
+    "description": "Greek letter kappa : κ",
+    "sortText": "00000"
+  },
+  "lambda λ": {
+    "prefix": [
+      "\\lambda",
+      "%"
+    ],
+    "body": [
+      "\\<lambda>"
+    ],
+    "description": "Greek letter lambda : λ",
+    "sortText": "00000"
+  },
+  "mu μ": {
+    "prefix": [
+      "\\mu"
+    ],
+    "body": [
+      "\\<mu>"
+    ],
+    "description": "Greek letter mu : μ",
+    "sortText": "00000"
+  },
+  "nu ν": {
+    "prefix": [
+      "\\nu"
+    ],
+    "body": [
+      "\\<nu>"
+    ],
+    "description": "Greek letter nu : ν",
+    "sortText": "00000"
+  },
+  "xi ξ": {
+    "prefix": [
+      "\\xi"
+    ],
+    "body": [
+      "\\<xi>"
+    ],
+    "description": "Greek letter xi : ξ",
+    "sortText": "00000"
+  },
+  "pi π": {
+    "prefix": [
+      "\\pi"
+    ],
+    "body": [
+      "\\<pi>"
+    ],
+    "description": "Greek letter pi : π",
+    "sortText": "00000"
+  },
+  "rho ρ": {
+    "prefix": [
+      "\\rho"
+    ],
+    "body": [
+      "\\<rho>"
+    ],
+    "description": "Greek letter rho : ρ",
+    "sortText": "00000"
+  },
+  "sigma σ": {
+    "prefix": [
+      "\\sigma"
+    ],
+    "body": [
+      "\\<sigma>"
+    ],
+    "description": "Greek letter sigma : σ",
+    "sortText": "00000"
+  },
+  "tau τ": {
+    "prefix": [
+      "\\tau"
+    ],
+    "body": [
+      "\\<tau>"
+    ],
+    "description": "Greek letter tau : τ",
+    "sortText": "00000"
+  },
+  "upsilon υ": {
+    "prefix": [
+      "\\upsilon"
+    ],
+    "body": [
+      "\\<upsilon>"
+    ],
+    "description": "Greek letter upsilon : υ",
+    "sortText": "00000"
+  },
+  "phi φ": {
+    "prefix": [
+      "\\phi"
+    ],
+    "body": [
+      "\\<phi>"
+    ],
+    "description": "Greek letter phi : φ",
+    "sortText": "00000"
+  },
+  "chi χ": {
+    "prefix": [
+      "\\chi"
+    ],
+    "body": [
+      "\\<chi>"
+    ],
+    "description": "Greek letter chi : χ",
+    "sortText": "00000"
+  },
+  "psi ψ": {
+    "prefix": [
+      "\\psi"
+    ],
+    "body": [
+      "\\<psi>"
+    ],
+    "description": "Greek letter psi : ψ",
+    "sortText": "00000"
+  },
+  "omega ω": {
+    "prefix": [
+      "\\omega"
+    ],
+    "body": [
+      "\\<omega>"
+    ],
+    "description": "Greek letter omega : ω",
+    "sortText": "00000"
+  },
+  "Gamma Γ": {
+    "prefix": [
+      "\\Gamma"
+    ],
+    "body": [
+      "\\<Gamma>"
+    ],
+    "description": "Greek capital letter gamma : Γ",
+    "sortText": "00000"
+  },
+  "Delta Δ": {
+    "prefix": [
+      "\\Delta"
+    ],
+    "body": [
+      "\\<Delta>"
+    ],
+    "description": "Greek capital letter delta : Δ",
+    "sortText": "00000"
+  },
+  "Theta Θ": {
+    "prefix": [
+      "\\Theta"
+    ],
+    "body": [
+      "\\<Theta>"
+    ],
+    "description": "Greek capital letter theta : Θ",
+    "sortText": "00000"
+  },
+  "Lambda Λ": {
+    "prefix": [
+      "\\Lambda"
+    ],
+    "body": [
+      "\\<Lambda>"
+    ],
+    "description": "Greek capital letter lambda : Λ",
+    "sortText": "00000"
+  },
+  "Xi Ξ": {
+    "prefix": [
+      "\\Xi"
+    ],
+    "body": [
+      "\\<Xi>"
+    ],
+    "description": "Greek capital letter xi : Ξ",
+    "sortText": "00000"
+  },
+  "Pi Π": {
+    "prefix": [
+      "\\Pi"
+    ],
+    "body": [
+      "\\<Pi>"
+    ],
+    "description": "Greek capital letter pi : Π",
+    "sortText": "00000"
+  },
+  "Sigma Σ": {
+    "prefix": [
+      "\\Sigma"
+    ],
+    "body": [
+      "\\<Sigma>"
+    ],
+    "description": "Greek capital letter sigma : Σ",
+    "sortText": "00000"
+  },
+  "Upsilon Υ": {
+    "prefix": [
+      "\\Upsilon"
+    ],
+    "body": [
+      "\\<Upsilon>"
+    ],
+    "description": "Greek capital letter upsilon : Υ",
+    "sortText": "00000"
+  },
+  "Phi Φ": {
+    "prefix": [
+      "\\Phi"
+    ],
+    "body": [
+      "\\<Phi>"
+    ],
+    "description": "Greek capital letter phi : Φ",
+    "sortText": "00000"
+  },
+  "Psi Ψ": {
+    "prefix": [
+      "\\Psi"
+    ],
+    "body": [
+      "\\<Psi>"
+    ],
+    "description": "Greek capital letter psi : Ψ",
+    "sortText": "00000"
+  },
+  "Omega Ω": {
+    "prefix": [
+      "\\Omega"
+    ],
+    "body": [
+      "\\<Omega>"
+    ],
+    "description": "Greek capital letter omega : Ω",
+    "sortText": "00000"
+  },
+  "bbbA 𝔸": {
+    "prefix": [
+      "\\bbbA"
+    ],
+    "body": [
+      "\\<bbbA>"
+    ],
+    "description": "Mathematical double-struck capital A : 𝔸",
+    "sortText": "00000"
+  },
+  "bool 𝔹": {
+    "prefix": [
+      "\\bool"
+    ],
+    "body": [
+      "\\<bool>"
+    ],
+    "description": "Mathematical double-struck capital B (booleans) : 𝔹",
+    "sortText": "00000"
+  },
+  "complex ℂ": {
+    "prefix": [
+      "\\complex"
+    ],
+    "body": [
+      "\\<complex>"
+    ],
+    "description": "Complex numbers : ℂ",
+    "sortText": "00000"
+  },
+  "bbbD 𝔻": {
+    "prefix": [
+      "\\bbbD"
+    ],
+    "body": [
+      "\\<bbbD>"
+    ],
+    "description": "Mathematical double-struck capital D : 𝔻",
+    "sortText": "00000"
+  },
+  "bbbE 𝔼": {
+    "prefix": [
+      "\\bbbE"
+    ],
+    "body": [
+      "\\<bbbE>"
+    ],
+    "description": "Mathematical double-struck capital E : 𝔼",
+    "sortText": "00000"
+  },
+  "bbbF 𝔽": {
+    "prefix": [
+      "\\bbbF"
+    ],
+    "body": [
+      "\\<bbbF>"
+    ],
+    "description": "Mathematical double-struck capital F : 𝔽",
+    "sortText": "00000"
+  },
+  "bbbG 𝔾": {
+    "prefix": [
+      "\\bbbG"
+    ],
+    "body": [
+      "\\<bbbG>"
+    ],
+    "description": "Mathematical double-struck capital G : 𝔾",
+    "sortText": "00000"
+  },
+  "bbbH ℍ": {
+    "prefix": [
+      "\\bbbH"
+    ],
+    "body": [
+      "\\<bbbH>"
+    ],
+    "description": "Double-struck capital H : ℍ",
+    "sortText": "00000"
+  },
+  "bbbI 𝕀": {
+    "prefix": [
+      "\\bbbI"
+    ],
+    "body": [
+      "\\<bbbI>"
+    ],
+    "description": "Mathematical double-struck capital I : 𝕀",
+    "sortText": "00000"
+  },
+  "bbbJ 𝕁": {
+    "prefix": [
+      "\\bbbJ"
+    ],
+    "body": [
+      "\\<bbbJ>"
+    ],
+    "description": "Mathematical double-struck capital J : 𝕁",
+    "sortText": "00000"
+  },
+  "bbbK 𝕂": {
+    "prefix": [
+      "\\bbbK"
+    ],
+    "body": [
+      "\\<bbbK>"
+    ],
+    "description": "Mathematical double-struck capital K : 𝕂",
+    "sortText": "00000"
+  },
+  "bbbL 𝕃": {
+    "prefix": [
+      "\\bbbL"
+    ],
+    "body": [
+      "\\<bbbL>"
+    ],
+    "description": "Mathematical double-struck capital L : 𝕃",
+    "sortText": "00000"
+  },
+  "bbbM 𝕄": {
+    "prefix": [
+      "\\bbbM"
+    ],
+    "body": [
+      "\\<bbbM>"
+    ],
+    "description": "Mathematical double-struck capital M : 𝕄",
+    "sortText": "00000"
+  },
+  "nat ℕ": {
+    "prefix": [
+      "\\nat"
+    ],
+    "body": [
+      "\\<nat>"
+    ],
+    "description": "Natural numbers : ℕ",
+    "sortText": "00000"
+  },
+  "bbbO 𝕆": {
+    "prefix": [
+      "\\bbbO"
+    ],
+    "body": [
+      "\\<bbbO>"
+    ],
+    "description": "Mathematical double-struck capital O : 𝕆",
+    "sortText": "00000"
+  },
+  "bbbP ℙ": {
+    "prefix": [
+      "\\bbbP"
+    ],
+    "body": [
+      "\\<bbbP>"
+    ],
+    "description": "Double-struck capital P : ℙ",
+    "sortText": "00000"
+  },
+  "rat ℚ": {
+    "prefix": [
+      "\\rat"
+    ],
+    "body": [
+      "\\<rat>"
+    ],
+    "description": "Rational numbers : ℚ",
+    "sortText": "00000"
+  },
+  "real ℝ": {
+    "prefix": [
+      "\\real"
+    ],
+    "body": [
+      "\\<real>"
+    ],
+    "description": "Real numbers : ℝ",
+    "sortText": "00000"
+  },
+  "bbbS 𝕊": {
+    "prefix": [
+      "\\bbbS"
+    ],
+    "body": [
+      "\\<bbbS>"
+    ],
+    "description": "Mathematical double-struck capital S : 𝕊",
+    "sortText": "00000"
+  },
+  "bbbT 𝕋": {
+    "prefix": [
+      "\\bbbT"
+    ],
+    "body": [
+      "\\<bbbT>"
+    ],
+    "description": "Mathematical double-struck capital T : 𝕋",
+    "sortText": "00000"
+  },
+  "bbbU 𝕌": {
+    "prefix": [
+      "\\bbbU"
+    ],
+    "body": [
+      "\\<bbbU>"
+    ],
+    "description": "Mathematical double-struck capital U : 𝕌",
+    "sortText": "00000"
+  },
+  "bbbV 𝕍": {
+    "prefix": [
+      "\\bbbV"
+    ],
+    "body": [
+      "\\<bbbV>"
+    ],
+    "description": "Mathematical double-struck capital V : 𝕍",
+    "sortText": "00000"
+  },
+  "bbbW 𝕎": {
+    "prefix": [
+      "\\bbbW"
+    ],
+    "body": [
+      "\\<bbbW>"
+    ],
+    "description": "Mathematical double-struck capital W : 𝕎",
+    "sortText": "00000"
+  },
+  "bbbX 𝕏": {
+    "prefix": [
+      "\\bbbX"
+    ],
+    "body": [
+      "\\<bbbX>"
+    ],
+    "description": "Mathematical double-struck capital X : 𝕏",
+    "sortText": "00000"
+  },
+  "bbbY 𝕐": {
+    "prefix": [
+      "\\bbbY"
+    ],
+    "body": [
+      "\\<bbbY>"
+    ],
+    "description": "Mathematical double-struck capital Y : 𝕐",
+    "sortText": "00000"
+  },
+  "int ℤ": {
+    "prefix": [
+      "\\int"
+    ],
+    "body": [
+      "\\<int>"
+    ],
+    "description": "Integers : ℤ",
+    "sortText": "00000"
+  },
+  "leftarrow ←": {
+    "prefix": [
+      "\\leftarrow",
+      "<."
+    ],
+    "body": [
+      "\\<leftarrow>"
+    ],
+    "description": "Left arrow : ←",
+    "sortText": "00000"
+  },
+  "longleftarrow ⟵": {
+    "prefix": [
+      "\\longleftarrow",
+      "<."
+    ],
+    "body": [
+      "\\<longleftarrow>"
+    ],
+    "description": "Long left arrow : ⟵",
+    "sortText": "00000"
+  },
+  "longlongleftarrow ⟽": {
+    "prefix": [
+      "\\longlongleftarrow",
+      "<."
+    ],
+    "body": [
+      "\\<longlongleftarrow>"
+    ],
+    "description": "Very long left arrow : ⟽",
+    "sortText": "00000"
+  },
+  "longlonglongleftarrow ⟸": {
+    "prefix": [
+      "\\longlonglongleftarrow",
+      "<."
+    ],
+    "body": [
+      "\\<Longleftarrow>"
+    ],
+    "description": "Extra long left arrow : ⟸",
+    "sortText": "00000"
+  },
+  "rightarrow →": {
+    "prefix": [
+      "\\rightarrow",
+      ".>",
+      "->"
+    ],
+    "body": [
+      "\\<rightarrow>"
+    ],
+    "description": "Right arrow : →",
+    "sortText": "00000"
+  },
+  "longrightarrow ⟶": {
+    "prefix": [
+      "\\longrightarrow",
+      ".>",
+      "-->"
+    ],
+    "body": [
+      "\\<longrightarrow>"
+    ],
+    "description": "Long right arrow : ⟶",
+    "sortText": "00000"
+  },
+  "longlongrightarrow ⟿": {
+    "prefix": [
+      "\\longlongrightarrow",
+      ".>",
+      "--->"
+    ],
+    "body": [
+      "\\<longlongrightarrow>"
+    ],
+    "description": "Very long right arrow : ⟿",
+    "sortText": "00000"
+  },
+  "longlonglongrightarrow ⟺": {
+    "prefix": [
+      "\\longlonglongrightarrow",
+      ".>",
+      "--->"
+    ],
+    "body": [
+      "\\<Longleftrightarrow>"
+    ],
+    "description": "Extra long right arrow : ⟺",
+    "sortText": "00000"
+  },
+  "Leftarrow ⇐": {
+    "prefix": [
+      "\\Leftarrow",
+      "<."
+    ],
+    "body": [
+      "\\<Leftarrow>"
+    ],
+    "description": "Left double arrow : ⇐",
+    "sortText": "00000"
+  },
+  "Longleftarrow ⟸": {
+    "prefix": [
+      "\\Longleftarrow",
+      "<."
+    ],
+    "body": [
+      "\\<Longleftarrow>"
+    ],
+    "description": "Long left double arrow : ⟸",
+    "sortText": "00000"
+  },
+  "Lleftarrow ⇚": {
+    "prefix": [
+      "\\Lleftarrow",
+      "<."
+    ],
+    "body": [
+      "\\<Lleftarrow>"
+    ],
+    "description": "Triple left arrow : ⇚",
+    "sortText": "00000"
+  },
+  "Rightarrow ⇒": {
+    "prefix": [
+      "\\Rightarrow",
+      ".>",
+      "\\=>"
+    ],
+    "body": [
+      "\\<Rightarrow>"
+    ],
+    "description": "Right double arrow : ⇒",
+    "sortText": "00000"
+  },
+  "Longrightarrow ⟹": {
+    "prefix": [
+      "\\Longrightarrow",
+      ".>",
+      "==>"
+    ],
+    "body": [
+      "\\<Longrightarrow>"
+    ],
+    "description": "Long right double arrow : ⟹",
+    "sortText": "00000"
+  },
+  "Rrightarrow ⇛": {
+    "prefix": [
+      "\\Rrightarrow",
+      ".>"
+    ],
+    "body": [
+      "\\<Rrightarrow>"
+    ],
+    "description": "Triple right arrow : ⇛",
+    "sortText": "00000"
+  },
+  "leftrightarrow ↔": {
+    "prefix": [
+      "\\leftrightarrow",
+      "<>",
+      "<->"
+    ],
+    "body": [
+      "\\<leftrightarrow>"
+    ],
+    "description": "Left right arrow : ↔",
+    "sortText": "00000"
+  },
+  "longleftrightarrow ⟷": {
+    "prefix": [
+      "\\longleftrightarrow",
+      "<>",
+      "<->",
+      "<-->"
+    ],
+    "body": [
+      "\\<longleftrightarrow>"
+    ],
+    "description": "Long left right arrow : ⟷",
+    "sortText": "00000"
+  },
+  "Leftrightarrow ⇔": {
+    "prefix": [
+      "\\Leftrightarrow",
+      "<>"
+    ],
+    "body": [
+      "\\<Leftrightarrow>"
+    ],
+    "description": "Left right double arrow : ⇔",
+    "sortText": "00000"
+  },
+  "Longleftrightarrow ⟺": {
+    "prefix": [
+      "\\Longleftrightarrow",
+      "<>"
+    ],
+    "body": [
+      "\\<Longleftrightarrow>"
+    ],
+    "description": "Long left right double arrow : ⟺",
+    "sortText": "00000"
+  },
+  "mapsto ↦": {
+    "prefix": [
+      "\\mapsto",
+      ".>",
+      "|->"
+    ],
+    "body": [
+      "\\<mapsto>"
+    ],
+    "description": "Maps to : ↦",
+    "sortText": "00000"
+  },
+  "longmapsto ⟼": {
+    "prefix": [
+      "\\longmapsto",
+      ".>",
+      "|-->"
+    ],
+    "body": [
+      "\\<longmapsto>"
+    ],
+    "description": "Long maps to : ⟼",
+    "sortText": "00000"
+  },
+  "midarrow ─": {
+    "prefix": [
+      "\\midarrow",
+      "<>"
+    ],
+    "body": [
+      "\\<bigskip>"
+    ],
+    "description": "Horizontal line : ─",
+    "sortText": "00000"
+  },
+  "Midarrow ═": {
+    "prefix": [
+      "\\Midarrow",
+      "<>"
+    ],
+    "body": [
+      "\\<Midarrow>"
+    ],
+    "description": "Double horizontal line : ═",
+    "sortText": "00000"
+  },
+  "hookleftarrow ↩": {
+    "prefix": [
+      "\\hookleftarrow",
+      "<."
+    ],
+    "body": [
+      "\\<hookleftarrow>"
+    ],
+    "description": "Hook left arrow : ↩",
+    "sortText": "00000"
+  },
+  "hookrightarrow ↪": {
+    "prefix": [
+      "\\hookrightarrow",
+      ".>"
+    ],
+    "body": [
+      "\\<hookrightarrow>"
+    ],
+    "description": "Hook right arrow : ↪",
+    "sortText": "00000"
+  },
+  "leftharpoondown ↽": {
+    "prefix": [
+      "\\leftharpoondown",
+      "<."
+    ],
+    "body": [
+      "\\<leftharpoondown>"
+    ],
+    "description": "Left harpoon down : ↽",
+    "sortText": "00000"
+  },
+  "rightharpoondown ⇁": {
+    "prefix": [
+      "\\rightharpoondown",
+      ".>"
+    ],
+    "body": [
+      "\\<rightharpoondown>"
+    ],
+    "description": "Right harpoon down : ⇁",
+    "sortText": "00000"
+  },
+  "leftharpoonup ↼": {
+    "prefix": [
+      "\\leftharpoonup",
+      "<."
+    ],
+    "body": [
+      "\\<leftharpoonup>"
+    ],
+    "description": "Left harpoon up : ↼",
+    "sortText": "00000"
+  },
+  "rightharpoonup ⇀": {
+    "prefix": [
+      "\\rightharpoonup",
+      ".>"
+    ],
+    "body": [
+      "\\<rightharpoonup>"
+    ],
+    "description": "Right harpoon up : ⇀",
+    "sortText": "00000"
+  },
+  "rightleftharpoons ⇌": {
+    "prefix": [
+      "\\rightleftharpoons",
+      "<>"
+    ],
+    "body": [
+      "\\<rightleftharpoons>"
+    ],
+    "description": "Right left harpoons : ⇌",
+    "sortText": "00000"
+  },
+  "leadsto ↝": {
+    "prefix": [
+      "\\leadsto",
+      ".>",
+      "~>"
+    ],
+    "body": [
+      "\\<leadsto>"
+    ],
+    "description": "Leads to : ↝",
+    "sortText": "00000"
+  },
+  "downharpoonleft ⇃": {
+    "prefix": [
+      "\\downharpoonleft"
+    ],
+    "body": [
+      "\\<downharpoonleft>"
+    ],
+    "description": "Down harpoon left : ⇃",
+    "sortText": "00000"
+  },
+  "downharpoonright ⇂": {
+    "prefix": [
+      "\\downharpoonright"
+    ],
+    "body": [
+      "\\<downharpoonright>"
+    ],
+    "description": "Down harpoon right : ⇂",
+    "sortText": "00000"
+  },
+  "upharpoonleft ↿": {
+    "prefix": [
+      "\\upharpoonleft"
+    ],
+    "body": [
+      "\\<upharpoonleft>"
+    ],
+    "description": "Up harpoon left : ↿",
+    "sortText": "00000"
+  },
+  "restriction ↾": {
+    "prefix": [
+      "\\restriction"
+    ],
+    "body": [
+      "\\<restriction>"
+    ],
+    "description": "Restriction : ↾",
+    "sortText": "00000"
+  },
+  "Colon ∷": {
+    "prefix": [
+      "\\Colon"
+    ],
+    "body": [
+      "\\<Colon>"
+    ],
+    "description": "Double colon : ∷",
+    "sortText": "00000"
+  },
+  "up ↑": {
+    "prefix": [
+      "\\up"
+    ],
+    "body": [
+      "\\<up>"
+    ],
+    "description": "Up arrow : ↑",
+    "sortText": "00000"
+  },
+  "Up ⇑": {
+    "prefix": [
+      "\\Up"
+    ],
+    "body": [
+      "\\<Up>"
+    ],
+    "description": "Up double arrow : ⇑",
+    "sortText": "00000"
+  },
+  "down ↓": {
+    "prefix": [
+      "\\down"
+    ],
+    "body": [
+      "\\<down>"
+    ],
+    "description": "Down arrow : ↓",
+    "sortText": "00000"
+  },
+  "Down ⇓": {
+    "prefix": [
+      "\\Down"
+    ],
+    "body": [
+      "\\<Down>"
+    ],
+    "description": "Down double arrow : ⇓",
+    "sortText": "00000"
+  },
+  "updown ↕": {
+    "prefix": [
+      "\\updown"
+    ],
+    "body": [
+      "\\<updown>"
+    ],
+    "description": "Up down arrow : ↕",
+    "sortText": "00000"
+  },
+  "Updown ⇕": {
+    "prefix": [
+      "\\Updown"
+    ],
+    "body": [
+      "\\<Updown>"
+    ],
+    "description": "Up down double arrow : ⇕",
+    "sortText": "00000"
+  },
+  "langle ⟨$1⟩": {
+    "prefix": [
+      "\\langle",
+      "<<"
+    ],
+    "body": [
+      "⟨$1⟩"
+    ],
+    "description": "Left angle bracket : ⟨$1⟩",
+    "sortText": "00000"
+  },
+  "rangle ⟩": {
+    "prefix": [
+      "\\rangle",
+      ">>"
+    ],
+    "body": [
+      "\\<rangle>"
+    ],
+    "description": "Right angle bracket : ⟩",
+    "sortText": "00000"
+  },
+  "llangle ⟪$1⟫": {
+    "prefix": [
+      "\\llangle",
+      "<<"
+    ],
+    "body": [
+      "⟪$1⟫"
+    ],
+    "description": "Left double angle bracket : ⟪$1⟫",
+    "sortText": "00000"
+  },
+  "rrangle ⟫": {
+    "prefix": [
+      "\\rrangle",
+      ">>"
+    ],
+    "body": [
+      "\\<rrangle>"
+    ],
+    "description": "Right double angle bracket : ⟫",
+    "sortText": "00000"
+  },
+  "lceil ⌈$1⌉": {
+    "prefix": [
+      "\\lceil",
+      "[."
+    ],
+    "body": [
+      "⌈$1⌉"
+    ],
+    "description": "Left ceiling : ⌈$1⌉",
+    "sortText": "00000"
+  },
+  "rceil ⌉": {
+    "prefix": [
+      "\\rceil",
+      ".]"
+    ],
+    "body": [
+      "\\<rceil>"
+    ],
+    "description": "Right ceiling : ⌉",
+    "sortText": "00000"
+  },
+  "lfloor ⌊$1⌋": {
+    "prefix": [
+      "\\lfloor",
+      "[."
+    ],
+    "body": [
+      "⌊$1⌋"
+    ],
+    "description": "Left floor : ⌊$1⌋",
+    "sortText": "00000"
+  },
+  "rfloor ⌋": {
+    "prefix": [
+      "\\rfloor",
+      ".]"
+    ],
+    "body": [
+      "\\<rfloor>"
+    ],
+    "description": "Right floor : ⌋",
+    "sortText": "00000"
+  },
+  "lparr ⦇$1⦈": {
+    "prefix": [
+      "\\lparr",
+      "(|"
+    ],
+    "body": [
+      "⦇$1⦈"
+    ],
+    "description": "Left parenthesis with bar : ⦇$1⦈",
+    "sortText": "00000"
+  },
+  "rparr ⦈": {
+    "prefix": [
+      "\\rparr",
+      "|)"
+    ],
+    "body": [
+      "\\<rparr>"
+    ],
+    "description": "Right parenthesis with bar : ⦈",
+    "sortText": "00000"
+  },
+  "lbrakk ⟦$1⟧": {
+    "prefix": [
+      "\\lbrakk",
+      "[|"
+    ],
+    "body": [
+      "⟦$1⟧"
+    ],
+    "description": "Left semantic bracket : ⟦$1⟧",
+    "sortText": "00000"
+  },
+  "rbrakk ⟧": {
+    "prefix": [
+      "\\rbrakk",
+      "|]"
+    ],
+    "body": [
+      "\\<rbrakk>"
+    ],
+    "description": "Right semantic bracket : ⟧",
+    "sortText": "00000"
+  },
+  "lbrace ⦃$1⦄": {
+    "prefix": [
+      "\\lbrace",
+      "{|"
+    ],
+    "body": [
+      "⦃$1⦄"
+    ],
+    "description": "Left brace with bar : ⦃$1⦄",
+    "sortText": "00000"
+  },
+  "rbrace ⦄": {
+    "prefix": [
+      "\\rbrace",
+      "|}"
+    ],
+    "body": [
+      "\\<rbrace>"
+    ],
+    "description": "Right brace with bar : ⦄",
+    "sortText": "00000"
+  },
+  "lblot ⦉$1⦊": {
+    "prefix": [
+      "\\lblot",
+      "<<"
+    ],
+    "body": [
+      "⦉$1⦊"
+    ],
+    "description": "Left blot bracket : ⦉$1⦊",
+    "sortText": "00000"
+  },
+  "rblot ⦊": {
+    "prefix": [
+      "\\rblot",
+      ">>"
+    ],
+    "body": [
+      "\\<rblot>"
+    ],
+    "description": "Right blot bracket : ⦊",
+    "sortText": "00000"
+  },
+  "guillemotleft «$1»": {
+    "prefix": [
+      "\\guillemotleft",
+      "<<"
+    ],
+    "body": [
+      "«$1»"
+    ],
+    "description": "Left guillemet : «$1»",
+    "sortText": "00000"
+  },
+  "guillemotright »": {
+    "prefix": [
+      "\\guillemotright",
+      ">>"
+    ],
+    "body": [
+      "\\<guillemotright>"
+    ],
+    "description": "Right guillemet : »",
+    "sortText": "00000"
+  },
+  "bottom ⊥": {
+    "prefix": [
+      "\\bottom"
+    ],
+    "body": [
+      "\\<bottom>"
+    ],
+    "description": "Bottom : ⊥",
+    "sortText": "00000"
+  },
+  "top ⊤": {
+    "prefix": [
+      "\\top"
+    ],
+    "body": [
+      "\\<top>"
+    ],
+    "description": "Top : ⊤",
+    "sortText": "00000"
+  },
+  "and ∧": {
+    "prefix": [
+      "\\and",
+      "\\/\\",
+      "&"
+    ],
+    "body": [
+      "\\<and>"
+    ],
+    "description": "Logical and : ∧",
+    "sortText": "00000"
+  },
+  "And ⋀": {
+    "prefix": [
+      "\\And",
+      "!!"
+    ],
+    "body": [
+      "\\<And>"
+    ],
+    "description": "Big logical and : ⋀",
+    "sortText": "00000"
+  },
+  "or ∨": {
+    "prefix": [
+      "\\or",
+      "\\\\/",
+      "|"
+    ],
+    "body": [
+      "\\<or>"
+    ],
+    "description": "Logical or : ∨",
+    "sortText": "00000"
+  },
+  "Or ⋁": {
+    "prefix": [
+      "\\Or",
+      "??"
+    ],
+    "body": [
+      "\\<Or>"
+    ],
+    "description": "Big logical or : ⋁",
+    "sortText": "00000"
+  },
+  "forall ∀": {
+    "prefix": [
+      "\\forall",
+      "!",
+      "ALL"
+    ],
+    "body": [
+      "\\<forall>"
+    ],
+    "description": "Universal quantifier : ∀",
+    "sortText": "00000"
+  },
+  "exists ∃": {
+    "prefix": [
+      "\\exists",
+      "?",
+      "EX"
+    ],
+    "body": [
+      "\\<exists>"
+    ],
+    "description": "Existential quantifier : ∃",
+    "sortText": "00000"
+  },
+  "nexists ∄": {
+    "prefix": [
+      "\\nexists",
+      "~?"
+    ],
+    "body": [
+      "\\<nexists>"
+    ],
+    "description": "Does not exist : ∄",
+    "sortText": "00000"
+  },
+  "not ¬": {
+    "prefix": [
+      "\\not",
+      "~"
+    ],
+    "body": [
+      "\\<not>"
+    ],
+    "description": "Logical not : ¬",
+    "sortText": "00000"
+  },
+  "circle ○": {
+    "prefix": [
+      "\\circle"
+    ],
+    "body": [
+      "\\<circle>"
+    ],
+    "description": "Circle : ○",
+    "sortText": "00000"
+  },
+  "box □": {
+    "prefix": [
+      "\\box"
+    ],
+    "body": [
+      "\\<box>"
+    ],
+    "description": "Box : □",
+    "sortText": "00000"
+  },
+  "diamond ◇": {
+    "prefix": [
+      "\\diamond"
+    ],
+    "body": [
+      "\\<diamond>"
+    ],
+    "description": "Diamond : ◇",
+    "sortText": "00000"
+  },
+  "diamondop ⋄": {
+    "prefix": [
+      "\\diamondop"
+    ],
+    "body": [
+      "\\<diamondop>"
+    ],
+    "description": "Diamond operator : ⋄",
+    "sortText": "00000"
+  },
+  "turnstile ⊢": {
+    "prefix": [
+      "\\turnstile",
+      "|-"
+    ],
+    "body": [
+      "\\<turnstile>"
+    ],
+    "description": "Turnstile : ⊢",
+    "sortText": "00000"
+  },
+  "Turnstile ⊨": {
+    "prefix": [
+      "\\Turnstile",
+      "|="
+    ],
+    "body": [
+      "\\<Turnstile>"
+    ],
+    "description": "Double turnstile : ⊨",
+    "sortText": "00000"
+  },
+  "tturnstile ⊩": {
+    "prefix": [
+      "\\tturnstile",
+      "|-"
+    ],
+    "body": [
+      "\\<tturnstile>"
+    ],
+    "description": "Triple turnstile : ⊩",
+    "sortText": "00000"
+  },
+  "TTurnstile ⊫": {
+    "prefix": [
+      "\\TTurnstile",
+      "|="
+    ],
+    "body": [
+      "\\<TTurnstile>"
+    ],
+    "description": "Triple double turnstile : ⊫",
+    "sortText": "00000"
+  },
+  "stileturn ⊣": {
+    "prefix": [
+      "\\stileturn",
+      "-|"
+    ],
+    "body": [
+      "\\<stileturn>"
+    ],
+    "description": "Reverse turnstile : ⊣",
+    "sortText": "00000"
+  },
+  "surd √": {
+    "prefix": [
+      "\\surd"
+    ],
+    "body": [
+      "\\<surd>"
+    ],
+    "description": "Square root : √",
+    "sortText": "00000"
+  },
+  "le ≤": {
+    "prefix": [
+      "\\le",
+      "<="
+    ],
+    "body": [
+      "\\<le>"
+    ],
+    "description": "Less than or equal : ≤",
+    "sortText": "00000"
+  },
+  "ge ≥": {
+    "prefix": [
+      "\\ge",
+      ">="
+    ],
+    "body": [
+      "\\<ge>"
+    ],
+    "description": "Greater than or equal : ≥",
+    "sortText": "00000"
+  },
+  "lless ≪": {
+    "prefix": [
+      "\\lless",
+      "<<"
+    ],
+    "body": [
+      "\\<lless>"
+    ],
+    "description": "Much less than : ≪",
+    "sortText": "00000"
+  },
+  "ggreater ≫": {
+    "prefix": [
+      "\\ggreater",
+      ">>"
+    ],
+    "body": [
+      "\\<ggreater>"
+    ],
+    "description": "Much greater than : ≫",
+    "sortText": "00000"
+  },
+  "lesssim ≲": {
+    "prefix": [
+      "\\lesssim"
+    ],
+    "body": [
+      "\\<lesssim>"
+    ],
+    "description": "Less than or similar to : ≲",
+    "sortText": "00000"
+  },
+  "greatersim ≳": {
+    "prefix": [
+      "\\greatersim"
+    ],
+    "body": [
+      "\\<greatersim>"
+    ],
+    "description": "Greater than or similar to : ≳",
+    "sortText": "00000"
+  },
+  "lessapprox ⪅": {
+    "prefix": [
+      "\\lessapprox"
+    ],
+    "body": [
+      "\\<lessapprox>"
+    ],
+    "description": "Less than or approximately equal : ⪅",
+    "sortText": "00000"
+  },
+  "greaterapprox ⪆": {
+    "prefix": [
+      "\\greaterapprox"
+    ],
+    "body": [
+      "\\<greaterapprox>"
+    ],
+    "description": "Greater than or approximately equal : ⪆",
+    "sortText": "00000"
+  },
+  "in ∈": {
+    "prefix": [
+      "\\in",
+      ":"
+    ],
+    "body": [
+      "\\<in>"
+    ],
+    "description": "Element of : ∈",
+    "sortText": "00000"
+  },
+  "notin ∉": {
+    "prefix": [
+      "\\notin",
+      "~:"
+    ],
+    "body": [
+      "\\<notin>"
+    ],
+    "description": "Not element of : ∉",
+    "sortText": "00000"
+  },
+  "subset ⊂": {
+    "prefix": [
+      "\\subset"
+    ],
+    "body": [
+      "\\<subset>"
+    ],
+    "description": "Subset : ⊂",
+    "sortText": "00000"
+  },
+  "supset ⊃": {
+    "prefix": [
+      "\\supset"
+    ],
+    "body": [
+      "\\<supset>"
+    ],
+    "description": "Superset : ⊃",
+    "sortText": "00000"
+  },
+  "subseteq ⊆": {
+    "prefix": [
+      "\\subseteq",
+      "(="
+    ],
+    "body": [
+      "\\<subseteq>"
+    ],
+    "description": "Subset or equal : ⊆",
+    "sortText": "00000"
+  },
+  "supseteq ⊇": {
+    "prefix": [
+      "\\supseteq",
+      ")="
+    ],
+    "body": [
+      "\\<supseteq>"
+    ],
+    "description": "Superset or equal : ⊇",
+    "sortText": "00000"
+  },
+  "sqsubset ⊏": {
+    "prefix": [
+      "\\sqsubset"
+    ],
+    "body": [
+      "\\<sqsubset>"
+    ],
+    "description": "Square subset : ⊏",
+    "sortText": "00000"
+  },
+  "sqsupset ⊐": {
+    "prefix": [
+      "\\sqsupset"
+    ],
+    "body": [
+      "\\<sqsupset>"
+    ],
+    "description": "Square superset : ⊐",
+    "sortText": "00000"
+  },
+  "sqsubseteq ⊑": {
+    "prefix": [
+      "\\sqsubseteq",
+      "[="
+    ],
+    "body": [
+      "\\<sqsubseteq>"
+    ],
+    "description": "Square subset or equal : ⊑",
+    "sortText": "00000"
+  },
+  "sqsupseteq ⊒": {
+    "prefix": [
+      "\\sqsupseteq",
+      "]="
+    ],
+    "body": [
+      "\\<sqsupseteq>"
+    ],
+    "description": "Square superset or equal : ⊒",
+    "sortText": "00000"
+  },
+  "inter ∩": {
+    "prefix": [
+      "\\inter",
+      "Int"
+    ],
+    "body": [
+      "\\<inter>"
+    ],
+    "description": "Intersection : ∩",
+    "sortText": "00000"
+  },
+  "Inter ⋂": {
+    "prefix": [
+      "\\Inter",
+      "Inter",
+      "INT"
+    ],
+    "body": [
+      "\\<Inter>"
+    ],
+    "description": "Big intersection : ⋂",
+    "sortText": "00000"
+  },
+  "union ∪": {
+    "prefix": [
+      "\\union",
+      "Un"
+    ],
+    "body": [
+      "\\<union>"
+    ],
+    "description": "Union : ∪",
+    "sortText": "00000"
+  },
+  "Union ⋃": {
+    "prefix": [
+      "\\Union",
+      "Union",
+      "UN"
+    ],
+    "body": [
+      "\\<Union>"
+    ],
+    "description": "Big union : ⋃",
+    "sortText": "00000"
+  },
+  "squnion ⊔": {
+    "prefix": [
+      "\\squnion"
+    ],
+    "body": [
+      "\\<squnion>"
+    ],
+    "description": "Square union : ⊔",
+    "sortText": "00000"
+  },
+  "Squnion ⨆": {
+    "prefix": [
+      "\\Squnion",
+      "SUP"
+    ],
+    "body": [
+      "\\<Squnion>"
+    ],
+    "description": "Big square union : ⨆",
+    "sortText": "00000"
+  },
+  "sqinter ⊓": {
+    "prefix": [
+      "\\sqinter"
+    ],
+    "body": [
+      "\\<sqinter>"
+    ],
+    "description": "Square intersection : ⊓",
+    "sortText": "00000"
+  },
+  "Sqinter ⨅": {
+    "prefix": [
+      "\\Sqinter",
+      "INF"
+    ],
+    "body": [
+      "\\<Sqinter>"
+    ],
+    "description": "Big square intersection : ⨅",
+    "sortText": "00000"
+  },
+  "setminus ∖": {
+    "prefix": [
+      "\\setminus"
+    ],
+    "body": [
+      "\\<setminus>"
+    ],
+    "description": "Set minus : ∖",
+    "sortText": "00000"
+  },
+  "propto ∝": {
+    "prefix": [
+      "\\propto"
+    ],
+    "body": [
+      "\\<propto>"
+    ],
+    "description": "Proportional to : ∝",
+    "sortText": "00000"
+  },
+  "uplus ⊎": {
+    "prefix": [
+      "\\uplus"
+    ],
+    "body": [
+      "\\<uplus>"
+    ],
+    "description": "Union plus : ⊎",
+    "sortText": "00000"
+  },
+  "Uplus ⨄": {
+    "prefix": [
+      "\\Uplus"
+    ],
+    "body": [
+      "\\<Uplus>"
+    ],
+    "description": "Big union plus : ⨄",
+    "sortText": "00000"
+  },
+  "noteq ≠": {
+    "prefix": [
+      "\\noteq",
+      "~="
+    ],
+    "body": [
+      "\\<noteq>"
+    ],
+    "description": "Not equal : ≠",
+    "sortText": "00000"
+  },
+  "sim ∼": {
+    "prefix": [
+      "\\sim"
+    ],
+    "body": [
+      "\\<sim>"
+    ],
+    "description": "Similar to : ∼",
+    "sortText": "00000"
+  },
+  "doteq ≐": {
+    "prefix": [
+      "\\doteq",
+      ".="
+    ],
+    "body": [
+      "\\<doteq>"
+    ],
+    "description": "Dot equals : ≐",
+    "sortText": "00000"
+  },
+  "simeq ≃": {
+    "prefix": [
+      "\\simeq"
+    ],
+    "body": [
+      "\\<simeq>"
+    ],
+    "description": "Similar or equal to : ≃",
+    "sortText": "00000"
+  },
+  "approx ≈": {
+    "prefix": [
+      "\\approx"
+    ],
+    "body": [
+      "\\<approx>"
+    ],
+    "description": "Approximately equal : ≈",
+    "sortText": "00000"
+  },
+  "asymp ≍": {
+    "prefix": [
+      "\\asymp"
+    ],
+    "body": [
+      "\\<asymp>"
+    ],
+    "description": "Asymptotically equal : ≍",
+    "sortText": "00000"
+  },
+  "cong ≅": {
+    "prefix": [
+      "\\cong"
+    ],
+    "body": [
+      "\\<cong>"
+    ],
+    "description": "Congruent to : ≅",
+    "sortText": "00000"
+  },
+  "smile ⌣": {
+    "prefix": [
+      "\\smile"
+    ],
+    "body": [
+      "\\<smile>"
+    ],
+    "description": "Smile : ⌣",
+    "sortText": "00000"
+  },
+  "equiv ≡": {
+    "prefix": [
+      "\\equiv",
+      "=="
+    ],
+    "body": [
+      "\\<equiv>"
+    ],
+    "description": "Equivalent : ≡",
+    "sortText": "00000"
+  },
+  "frown ⌢": {
+    "prefix": [
+      "\\frown"
+    ],
+    "body": [
+      "\\<Zcat>"
+    ],
+    "description": "Frown : ⌢",
+    "sortText": "00000"
+  },
+  "Join ⨝": {
+    "prefix": [
+      "\\Join"
+    ],
+    "body": [
+      "\\<Join>"
+    ],
+    "description": "Join : ⨝",
+    "sortText": "00000"
+  },
+  "bowtie ⟕": {
+    "prefix": [
+      "\\bowtie"
+    ],
+    "body": [
+      "\\<bowtie>"
+    ],
+    "description": "Bowtie : ⟕",
+    "sortText": "00000"
+  },
+  "prec ≺": {
+    "prefix": [
+      "\\prec"
+    ],
+    "body": [
+      "\\<prec>"
+    ],
+    "description": "Precedes : ≺",
+    "sortText": "00000"
+  },
+  "succ ≻": {
+    "prefix": [
+      "\\succ"
+    ],
+    "body": [
+      "\\<succ>"
+    ],
+    "description": "Succeeds : ≻",
+    "sortText": "00000"
+  },
+  "preceq ≼": {
+    "prefix": [
+      "\\preceq"
+    ],
+    "body": [
+      "\\<preceq>"
+    ],
+    "description": "Precedes or equal : ≼",
+    "sortText": "00000"
+  },
+  "succeq ≽": {
+    "prefix": [
+      "\\succeq"
+    ],
+    "body": [
+      "\\<succeq>"
+    ],
+    "description": "Succeeds or equal : ≽",
+    "sortText": "00000"
+  },
+  "parallel ∥": {
+    "prefix": [
+      "\\parallel",
+      "||"
+    ],
+    "body": [
+      "\\<parallel>"
+    ],
+    "description": "Parallel : ∥",
+    "sortText": "00000"
+  },
+  "Parallel ‖": {
+    "prefix": [
+      "\\Parallel",
+      "||"
+    ],
+    "body": [
+      "\\<Parallel>"
+    ],
+    "description": "Double parallel : ‖",
+    "sortText": "00000"
+  },
+  "interleave ⫴": {
+    "prefix": [
+      "\\interleave",
+      "||"
+    ],
+    "body": [
+      "\\<interleave>"
+    ],
+    "description": "Interleave : ⫴",
+    "sortText": "00000"
+  },
+  "sslash ⫽": {
+    "prefix": [
+      "\\sslash",
+      "||"
+    ],
+    "body": [
+      "\\<sslash>"
+    ],
+    "description": "Double slash : ⫽",
+    "sortText": "00000"
+  },
+  "bar ¦": {
+    "prefix": [
+      "\\bar",
+      "||"
+    ],
+    "body": [
+      "\\<bar>"
+    ],
+    "description": "Broken bar : ¦",
+    "sortText": "00000"
+  },
+  "bbar ⫿": {
+    "prefix": [
+      "\\bbar",
+      "||"
+    ],
+    "body": [
+      "\\<bbar>"
+    ],
+    "description": "Big bar : ⫿",
+    "sortText": "00000"
+  },
+  "plusminus ±": {
+    "prefix": [
+      "\\plusminus"
+    ],
+    "body": [
+      "\\<plusminus>"
+    ],
+    "description": "Plus minus : ±",
+    "sortText": "00000"
+  },
+  "minusplus ∓": {
+    "prefix": [
+      "\\minusplus"
+    ],
+    "body": [
+      "\\<minusplus>"
+    ],
+    "description": "Minus plus : ∓",
+    "sortText": "00000"
+  },
+  "times ×": {
+    "prefix": [
+      "\\times",
+      "<*>"
+    ],
+    "body": [
+      "\\<times>"
+    ],
+    "description": "Times : ×",
+    "sortText": "00000"
+  },
+  "div ÷": {
+    "prefix": [
+      "\\div"
+    ],
+    "body": [
+      "\\<div>"
+    ],
+    "description": "Division : ÷",
+    "sortText": "00000"
+  },
+  "cdot ⋅": {
+    "prefix": [
+      "\\cdot"
+    ],
+    "body": [
+      "\\<cdot>"
+    ],
+    "description": "Center dot : ⋅",
+    "sortText": "00000"
+  },
+  "star ⋆": {
+    "prefix": [
+      "\\star"
+    ],
+    "body": [
+      "\\<star>"
+    ],
+    "description": "Star : ⋆",
+    "sortText": "00000"
+  },
+  "bullet ∙": {
+    "prefix": [
+      "\\bullet"
+    ],
+    "body": [
+      "\\<bullet>"
+    ],
+    "description": "Bullet : ∙",
+    "sortText": "00000"
+  },
+  "circ ∘": {
+    "prefix": [
+      "\\circ"
+    ],
+    "body": [
+      "\\<circ>"
+    ],
+    "description": "Composition : ∘",
+    "sortText": "00000"
+  },
+  "dagger †": {
+    "prefix": [
+      "\\dagger"
+    ],
+    "body": [
+      "\\<dagger>"
+    ],
+    "description": "Dagger : †",
+    "sortText": "00000"
+  },
+  "ddagger ‡": {
+    "prefix": [
+      "\\ddagger"
+    ],
+    "body": [
+      "\\<ddagger>"
+    ],
+    "description": "Double dagger : ‡",
+    "sortText": "00000"
+  },
+  "lhd ⊲": {
+    "prefix": [
+      "\\lhd"
+    ],
+    "body": [
+      "\\<lhd>"
+    ],
+    "description": "Left triangular operator : ⊲",
+    "sortText": "00000"
+  },
+  "rhd ⊳": {
+    "prefix": [
+      "\\rhd"
+    ],
+    "body": [
+      "\\<rhd>"
+    ],
+    "description": "Right triangular operator : ⊳",
+    "sortText": "00000"
+  },
+  "unlhd ⊴": {
+    "prefix": [
+      "\\unlhd"
+    ],
+    "body": [
+      "\\<unlhd>"
+    ],
+    "description": "Left triangular operator or equal : ⊴",
+    "sortText": "00000"
+  },
+  "unrhd ⊵": {
+    "prefix": [
+      "\\unrhd"
+    ],
+    "body": [
+      "\\<unrhd>"
+    ],
+    "description": "Right triangular operator or equal : ⊵",
+    "sortText": "00000"
+  },
+  "triangleleft ◃": {
+    "prefix": [
+      "\\triangleleft"
+    ],
+    "body": [
+      "\\<triangleleft>"
+    ],
+    "description": "Triangle left : ◃",
+    "sortText": "00000"
+  },
+  "triangleright ▹": {
+    "prefix": [
+      "\\triangleright"
+    ],
+    "body": [
+      "\\<triangleright>"
+    ],
+    "description": "Triangle right : ▹",
+    "sortText": "00000"
+  },
+  "triangle △": {
+    "prefix": [
+      "\\triangle"
+    ],
+    "body": [
+      "\\<triangle>"
+    ],
+    "description": "Triangle : △",
+    "sortText": "00000"
+  },
+  "triangleq ≜": {
+    "prefix": [
+      "\\triangleq"
+    ],
+    "body": [
+      "\\<triangleq>"
+    ],
+    "description": "Triangle equal : ≜",
+    "sortText": "00000"
+  },
+  "oplus ⊕": {
+    "prefix": [
+      "\\oplus"
+    ],
+    "body": [
+      "\\<oplus>"
+    ],
+    "description": "Circled plus : ⊕",
+    "sortText": "00000"
+  },
+  "Oplus ⨁": {
+    "prefix": [
+      "\\Oplus"
+    ],
+    "body": [
+      "\\<Oplus>"
+    ],
+    "description": "Big circled plus : ⨁",
+    "sortText": "00000"
+  },
+  "otimes ⊗": {
+    "prefix": [
+      "\\otimes"
+    ],
+    "body": [
+      "\\<otimes>"
+    ],
+    "description": "Circled times : ⊗",
+    "sortText": "00000"
+  },
+  "Otimes ⨂": {
+    "prefix": [
+      "\\Otimes"
+    ],
+    "body": [
+      "\\<Otimes>"
+    ],
+    "description": "Big circled times : ⨂",
+    "sortText": "00000"
+  },
+  "odot ⊙": {
+    "prefix": [
+      "\\odot"
+    ],
+    "body": [
+      "\\<odot>"
+    ],
+    "description": "Circled dot : ⊙",
+    "sortText": "00000"
+  },
+  "Odot ⨀": {
+    "prefix": [
+      "\\Odot"
+    ],
+    "body": [
+      "\\<Odot>"
+    ],
+    "description": "Big circled dot : ⨀",
+    "sortText": "00000"
+  },
+  "ominus ⊖": {
+    "prefix": [
+      "\\ominus"
+    ],
+    "body": [
+      "\\<ominus>"
+    ],
+    "description": "Circled minus : ⊖",
+    "sortText": "00000"
+  },
+  "oslash ⊘": {
+    "prefix": [
+      "\\oslash"
+    ],
+    "body": [
+      "\\<oslash>"
+    ],
+    "description": "Circled slash : ⊘",
+    "sortText": "00000"
+  },
+  "dots …": {
+    "prefix": [
+      "\\dots",
+      "..."
+    ],
+    "body": [
+      "\\<dots>"
+    ],
+    "description": "Ellipsis : …",
+    "sortText": "00000"
+  },
+  "cdots ⋯": {
+    "prefix": [
+      "\\cdots"
+    ],
+    "body": [
+      "\\<cdots>"
+    ],
+    "description": "Center dots : ⋯",
+    "sortText": "00000"
+  },
+  "Sum ∑": {
+    "prefix": [
+      "\\Sum",
+      "SUM"
+    ],
+    "body": [
+      "\\<Sum>"
+    ],
+    "description": "Sum : ∑",
+    "sortText": "00000"
+  },
+  "Prod ∏": {
+    "prefix": [
+      "\\Prod",
+      "PROD"
+    ],
+    "body": [
+      "\\<Prod>"
+    ],
+    "description": "Product : ∏",
+    "sortText": "00000"
+  },
+  "Coprod ∐": {
+    "prefix": [
+      "\\Coprod"
+    ],
+    "body": [
+      "\\<Coprod>"
+    ],
+    "description": "Coproduct : ∐",
+    "sortText": "00000"
+  },
+  "infinity ∞": {
+    "prefix": [
+      "\\infinity"
+    ],
+    "body": [
+      "\\<infinity>"
+    ],
+    "description": "Infinity : ∞",
+    "sortText": "00000"
+  },
+  "integral ∫": {
+    "prefix": [
+      "\\integral"
+    ],
+    "body": [
+      "\\<integral>"
+    ],
+    "description": "Integral : ∫",
+    "sortText": "00000"
+  },
+  "ointegral ∮": {
+    "prefix": [
+      "\\ointegral"
+    ],
+    "body": [
+      "\\<ointegral>"
+    ],
+    "description": "Contour integral : ∮",
+    "sortText": "00000"
+  },
+  "clubsuit ♣": {
+    "prefix": [
+      "\\clubsuit"
+    ],
+    "body": [
+      "\\<clubsuit>"
+    ],
+    "description": "Club suit : ♣",
+    "sortText": "00000"
+  },
+  "diamondsuit ♢": {
+    "prefix": [
+      "\\diamondsuit"
+    ],
+    "body": [
+      "\\<diamondsuit>"
+    ],
+    "description": "Diamond suit : ♢",
+    "sortText": "00000"
+  },
+  "heartsuit ♡": {
+    "prefix": [
+      "\\heartsuit"
+    ],
+    "body": [
+      "\\<heartsuit>"
+    ],
+    "description": "Heart suit : ♡",
+    "sortText": "00000"
+  },
+  "spadesuit ♠": {
+    "prefix": [
+      "\\spadesuit"
+    ],
+    "body": [
+      "\\<spadesuit>"
+    ],
+    "description": "Spade suit : ♠",
+    "sortText": "00000"
+  },
+  "aleph ℵ": {
+    "prefix": [
+      "\\aleph"
+    ],
+    "body": [
+      "\\<aleph>"
+    ],
+    "description": "Aleph : ℵ",
+    "sortText": "00000"
+  },
+  "emptyset ∅": {
+    "prefix": [
+      "\\emptyset"
+    ],
+    "body": [
+      "\\<emptyset>"
+    ],
+    "description": "Empty set : ∅",
+    "sortText": "00000"
+  },
+  "nabla ∇": {
+    "prefix": [
+      "\\nabla"
+    ],
+    "body": [
+      "\\<nabla>"
+    ],
+    "description": "Nabla : ∇",
+    "sortText": "00000"
+  },
+  "partial ∂": {
+    "prefix": [
+      "\\partial"
+    ],
+    "body": [
+      "\\<partial>"
+    ],
+    "description": "Partial derivative : ∂",
+    "sortText": "00000"
+  },
+  "flat ♭": {
+    "prefix": [
+      "\\flat"
+    ],
+    "body": [
+      "\\<flat>"
+    ],
+    "description": "Musical flat : ♭",
+    "sortText": "00000"
+  },
+  "natural ♮": {
+    "prefix": [
+      "\\natural"
+    ],
+    "body": [
+      "\\<natural>"
+    ],
+    "description": "Musical natural : ♮",
+    "sortText": "00000"
+  },
+  "sharp ♯": {
+    "prefix": [
+      "\\sharp"
+    ],
+    "body": [
+      "\\<sharp>"
+    ],
+    "description": "Musical sharp : ♯",
+    "sortText": "00000"
+  },
+  "angle ∠": {
+    "prefix": [
+      "\\angle"
+    ],
+    "body": [
+      "\\<angle>"
+    ],
+    "description": "Angle : ∠",
+    "sortText": "00000"
+  },
+  "copyright ©": {
+    "prefix": [
+      "\\copyright"
+    ],
+    "body": [
+      "\\<copyright>"
+    ],
+    "description": "Copyright : ©",
+    "sortText": "00000"
+  },
+  "registered ®": {
+    "prefix": [
+      "\\registered"
+    ],
+    "body": [
+      "\\<registered>"
+    ],
+    "description": "Registered : ®",
+    "sortText": "00000"
+  },
+  "hyphen ‐": {
+    "prefix": [
+      "\\hyphen"
+    ],
+    "body": [
+      "\\<hyphen>"
+    ],
+    "description": "Hyphen : ‐",
+    "sortText": "00000"
+  },
+  "inverse ¯": {
+    "prefix": [
+      "\\inverse"
+    ],
+    "body": [
+      "\\<inverse>"
+    ],
+    "description": "Overline : ¯",
+    "sortText": "00000"
+  },
+  "sqdot ·": {
+    "prefix": [
+      "\\sqdot"
+    ],
+    "body": [
+      "\\<sqdot>"
+    ],
+    "description": "Middle dot : ·",
+    "sortText": "00000"
+  },
+  "onequarter ¼": {
+    "prefix": [
+      "\\onequarter"
+    ],
+    "body": [
+      "\\<onequarter>"
+    ],
+    "description": "One quarter : ¼",
+    "sortText": "00000"
+  },
+  "onehalf ½": {
+    "prefix": [
+      "\\onehalf"
+    ],
+    "body": [
+      "\\<onehalf>"
+    ],
+    "description": "One half : ½",
+    "sortText": "00000"
+  },
+  "threequarters ¾": {
+    "prefix": [
+      "\\threequarters"
+    ],
+    "body": [
+      "\\<threequarters>"
+    ],
+    "description": "Three quarters : ¾",
+    "sortText": "00000"
+  },
+  "ordfeminine ª": {
+    "prefix": [
+      "\\ordfeminine"
+    ],
+    "body": [
+      "\\<ordfeminine>"
+    ],
+    "description": "Feminine ordinal indicator : ª",
+    "sortText": "00000"
+  },
+  "ordmasculine º": {
+    "prefix": [
+      "\\ordmasculine"
+    ],
+    "body": [
+      "\\<ordmasculine>"
+    ],
+    "description": "Masculine ordinal indicator : º",
+    "sortText": "00000"
+  },
+  "section §": {
+    "prefix": [
+      "\\section"
+    ],
+    "body": [
+      "\\<section>"
+    ],
+    "description": "Section : §",
+    "sortText": "00000"
+  },
+  "paragraph ¶": {
+    "prefix": [
+      "\\paragraph"
+    ],
+    "body": [
+      "\\<paragraph>"
+    ],
+    "description": "Paragraph : ¶",
+    "sortText": "00000"
+  },
+  "exclamdown ¡": {
+    "prefix": [
+      "\\exclamdown"
+    ],
+    "body": [
+      "\\<exclamdown>"
+    ],
+    "description": "Inverted exclamation mark : ¡",
+    "sortText": "00000"
+  },
+  "questiondown ¿": {
+    "prefix": [
+      "\\questiondown"
+    ],
+    "body": [
+      "\\<questiondown>"
+    ],
+    "description": "Inverted question mark : ¿",
+    "sortText": "00000"
+  },
+  "euro €": {
+    "prefix": [
+      "\\euro"
+    ],
+    "body": [
+      "\\<euro>"
+    ],
+    "description": "Euro : €",
+    "sortText": "00000"
+  },
+  "pounds £": {
+    "prefix": [
+      "\\pounds"
+    ],
+    "body": [
+      "\\<pounds>"
+    ],
+    "description": "Pound : £",
+    "sortText": "00000"
+  },
+  "yen ¥": {
+    "prefix": [
+      "\\yen"
+    ],
+    "body": [
+      "\\<yen>"
+    ],
+    "description": "Yen : ¥",
+    "sortText": "00000"
+  },
+  "cent ¢": {
+    "prefix": [
+      "\\cent"
+    ],
+    "body": [
+      "\\<cent>"
+    ],
+    "description": "Cent : ¢",
+    "sortText": "00000"
+  },
+  "currency ¤": {
+    "prefix": [
+      "\\currency"
+    ],
+    "body": [
+      "\\<currency>"
+    ],
+    "description": "Currency : ¤",
+    "sortText": "00000"
+  },
+  "degree °": {
+    "prefix": [
+      "\\degree"
+    ],
+    "body": [
+      "\\<degree>"
+    ],
+    "description": "Degree : °",
+    "sortText": "00000"
+  },
+  "amalg ⨿": {
+    "prefix": [
+      "\\amalg"
+    ],
+    "body": [
+      "\\<amalg>"
+    ],
+    "description": "Amalgamation : ⨿",
+    "sortText": "00000"
+  },
+  "mho ℧": {
+    "prefix": [
+      "\\mho"
+    ],
+    "body": [
+      "\\<mho>"
+    ],
+    "description": "Mho : ℧",
+    "sortText": "00000"
+  },
+  "lozenge ◊": {
+    "prefix": [
+      "\\lozenge"
+    ],
+    "body": [
+      "\\<lozenge>"
+    ],
+    "description": "Lozenge : ◊",
+    "sortText": "00000"
+  },
+  "wp ℘": {
+    "prefix": [
+      "\\wp"
+    ],
+    "body": [
+      "\\<wp>"
+    ],
+    "description": "Weierstrass p : ℘",
+    "sortText": "00000"
+  },
+  "wrong ⟂": {
+    "prefix": [
+      "\\wrong"
+    ],
+    "body": [
+      "\\<wrong>"
+    ],
+    "description": "Wrong : ⟂",
+    "sortText": "00000"
+  },
+  "acute ´": {
+    "prefix": [
+      "\\acute"
+    ],
+    "body": [
+      "\\<acute>"
+    ],
+    "description": "Acute accent : ´",
+    "sortText": "00000"
+  },
+  "index ı": {
+    "prefix": [
+      "\\index"
+    ],
+    "body": [
+      "\\<index>"
+    ],
+    "description": "Dotless i : ı",
+    "sortText": "00000"
+  },
+  "dieresis ¨": {
+    "prefix": [
+      "\\dieresis"
+    ],
+    "body": [
+      "\\<dieresis>"
+    ],
+    "description": "Dieresis : ¨",
+    "sortText": "00000"
+  },
+  "cedilla ¸": {
+    "prefix": [
+      "\\cedilla"
+    ],
+    "body": [
+      "\\<cedilla>"
+    ],
+    "description": "Cedilla : ¸",
+    "sortText": "00000"
+  },
+  "hungarumlaut ˝": {
+    "prefix": [
+      "\\hungarumlaut"
+    ],
+    "body": [
+      "\\<hungarumlaut>"
+    ],
+    "description": "Hungarian umlaut : ˝",
+    "sortText": "00000"
+  },
+  "bind ⤜": {
+    "prefix": [
+      "\\bind",
+      ">>="
+    ],
+    "body": [
+      "\\<bind>"
+    ],
+    "description": "Bind : ⤜",
+    "sortText": "00000"
+  },
+  "then ⪢": {
+    "prefix": [
+      "\\then",
+      ">>"
+    ],
+    "body": [
+      "\\<then>"
+    ],
+    "description": "Then : ⪢",
+    "sortText": "00000"
+  },
+  "some ϵ": {
+    "prefix": [
+      "\\some"
+    ],
+    "body": [
+      "\\<some>"
+    ],
+    "description": "Some : ϵ",
+    "sortText": "00000"
+  },
+  "Zcomp ⨾": {
+    "prefix": [
+      "\\Zcomp"
+    ],
+    "body": [
+      "\\<Zcomp>"
+    ],
+    "description": "Z composition : ⨾",
+    "sortText": "00000"
+  },
+  "Zinj ⤳": {
+    "prefix": [
+      "\\Zinj",
+      ".>"
+    ],
+    "body": [
+      "\\<Zinj>"
+    ],
+    "description": "Z injection : ⤳",
+    "sortText": "00000"
+  },
+  "Zpinj ⤔": {
+    "prefix": [
+      "\\Zpinj",
+      ".>"
+    ],
+    "body": [
+      "\\<Zpinj>"
+    ],
+    "description": "Z partial injection : ⤔",
+    "sortText": "00000"
+  },
+  "Zfinj ⤕": {
+    "prefix": [
+      "\\Zfinj",
+      ".>"
+    ],
+    "body": [
+      "\\<Zfinj>"
+    ],
+    "description": "Z finite injection : ⤕",
+    "sortText": "00000"
+  },
+  "Zsurj ⤀": {
+    "prefix": [
+      "\\Zsurj",
+      ".>"
+    ],
+    "body": [
+      "\\<Zsurj>"
+    ],
+    "description": "Z surjection : ⤀",
+    "sortText": "00000"
+  },
+  "Zpsurj ⥀": {
+    "prefix": [
+      "\\Zpsurj",
+      ".>"
+    ],
+    "body": [
+      "\\<Zpsurj>"
+    ],
+    "description": "Z partial surjection : ⥀",
+    "sortText": "00000"
+  },
+  "Zbij ⤖": {
+    "prefix": [
+      "\\Zbij",
+      ".>"
+    ],
+    "body": [
+      "\\<Zbij>"
+    ],
+    "description": "Z bijection : ⤖",
+    "sortText": "00000"
+  },
+  "Zpfun ⇸": {
+    "prefix": [
+      "\\Zpfun",
+      ".>"
+    ],
+    "body": [
+      "\\<Zpfun>"
+    ],
+    "description": "Z partial function : ⇸",
+    "sortText": "00000"
+  },
+  "Zffun ⇻": {
+    "prefix": [
+      "\\Zffun",
+      ".>"
+    ],
+    "body": [
+      "\\<Zffun>"
+    ],
+    "description": "Z finite function : ⇻",
+    "sortText": "00000"
+  },
+  "Zdres ◁": {
+    "prefix": [
+      "\\Zdres"
+    ],
+    "body": [
+      "\\<Zdres>"
+    ],
+    "description": "Z domain restriction : ◁",
+    "sortText": "00000"
+  },
+  "Zndres ⩤": {
+    "prefix": [
+      "\\Zndres"
+    ],
+    "body": [
+      "\\<Zndres>"
+    ],
+    "description": "Z domain anti-restriction : ⩤",
+    "sortText": "00000"
+  },
+  "Zrres ▷": {
+    "prefix": [
+      "\\Zrres"
+    ],
+    "body": [
+      "\\<Zrres>"
+    ],
+    "description": "Z range restriction : ▷",
+    "sortText": "00000"
+  },
+  "Znrres ⩥": {
+    "prefix": [
+      "\\Znrres"
+    ],
+    "body": [
+      "\\<Znrres>"
+    ],
+    "description": "Z range anti-restriction : ⩥",
+    "sortText": "00000"
+  },
+  "Zspot ⦁": {
+    "prefix": [
+      "\\Zspot"
+    ],
+    "body": [
+      "\\<Zspot>"
+    ],
+    "description": "Z spot : ⦁",
+    "sortText": "00000"
+  },
+  "Zsemi ⨟": {
+    "prefix": [
+      "\\Zsemi"
+    ],
+    "body": [
+      "\\<Zsemi>"
+    ],
+    "description": "Z semicolon : ⨟",
+    "sortText": "00000"
+  },
+  "Zproject ⨡": {
+    "prefix": [
+      "\\Zproject"
+    ],
+    "body": [
+      "\\<Zproject>"
+    ],
+    "description": "Z projection : ⨡",
+    "sortText": "00000"
+  },
+  "Ztypecolon ⦂": {
+    "prefix": [
+      "\\Ztypecolon"
+    ],
+    "body": [
+      "\\<Ztypecolon>"
+    ],
+    "description": "Z type colon : ⦂",
+    "sortText": "00000"
+  },
+  "Zhide ⩹": {
+    "prefix": [
+      "\\Zhide"
+    ],
+    "body": [
+      "\\<Zhide>"
+    ],
+    "description": "Z hide : ⩹",
+    "sortText": "00000"
+  },
+  "Zcat ⌢": {
+    "prefix": [
+      "\\Zcat"
+    ],
+    "body": [
+      "\\<Zcat>"
+    ],
+    "description": "Z concatenation : ⌢",
+    "sortText": "00000"
+  },
+  "Zinbag ⋿": {
+    "prefix": [
+      "\\Zinbag"
+    ],
+    "body": [
+      "\\<Zinbag>"
+    ],
+    "description": "Z in bag : ⋿",
+    "sortText": "00000"
+  },
+  "Zprime ′": {
+    "prefix": [
+      "\\Zprime"
+    ],
+    "body": [
+      "\\<Zprime>"
+    ],
+    "description": "Z prime : ′",
+    "sortText": "00000"
+  },
+  "hole ⦵": {
+    "prefix": [
+      "\\hole"
+    ],
+    "body": [
+      "\\<hole>"
+    ],
+    "description": "Hole : ⦵",
+    "sortText": "00000"
+  },
+  "newline ⏎": {
+    "prefix": [
+      "\\newline"
+    ],
+    "body": [
+      "\\<newline>"
+    ],
+    "description": "Newline : ⏎",
+    "sortText": "00000"
+  },
+  "comment ‒": {
+    "prefix": [
+      "\\comment"
+    ],
+    "body": [
+      "\\<comment>"
+    ],
+    "description": "Comment : ‒",
+    "sortText": "00000"
+  },
+  "cancel ⌻": {
+    "prefix": [
+      "\\cancel"
+    ],
+    "body": [
+      "\\<cancel>"
+    ],
+    "description": "Cancel : ⌻",
+    "sortText": "00000"
+  },
+  "marker ✐": {
+    "prefix": [
+      "\\marker"
+    ],
+    "body": [
+      "\\<marker>"
+    ],
+    "description": "Marker : ✐",
+    "sortText": "00000"
+  },
+  "checkmark ✓": {
+    "prefix": [
+      "\\checkmark"
+    ],
+    "body": [
+      "\\<checkmark>"
+    ],
+    "description": "Check mark : ✓",
+    "sortText": "00000"
+  },
+  "crossmark ✗": {
+    "prefix": [
+      "\\crossmark"
+    ],
+    "body": [
+      "\\<crossmark>"
+    ],
+    "description": "Cross mark : ✗",
+    "sortText": "00000"
+  },
+  "open ‹$1›": {
+    "prefix": [
+      "\\open",
+      "<<"
+    ],
+    "body": [
+      "\\<open>$1\\<close>"
+    ],
+    "description": "Single left angle quotation mark : ‹$1›",
+    "sortText": "00000"
+  },
+  "close ›": {
+    "prefix": [
+      "\\close",
+      ">>"
+    ],
+    "body": [
+      "\\<close>"
+    ],
+    "description": "Single right angle quotation mark : ›",
+    "sortText": "00000"
+  },
+  "here ⌂": {
+    "prefix": [
+      "\\here"
+    ],
+    "body": [
+      "\\<here>"
+    ],
+    "description": "Here : ⌂",
+    "sortText": "00000"
+  },
+  "undefined ❖": {
+    "prefix": [
+      "\\undefined"
+    ],
+    "body": [
+      "\\<undefined>"
+    ],
+    "description": "Undefined : ❖",
+    "sortText": "00000"
+  },
+  "noindent ⟾": {
+    "prefix": [
+      "\\noindent"
+    ],
+    "body": [
+      "\\<noindent>"
+    ],
+    "description": "No indent : ⟾",
+    "sortText": "00000"
+  },
+  "smallskip ┘": {
+    "prefix": [
+      "\\smallskip"
+    ],
+    "body": [
+      "\\<smallskip>"
+    ],
+    "description": "Small skip : ┘",
+    "sortText": "00000"
+  },
+  "medskip ┙": {
+    "prefix": [
+      "\\medskip"
+    ],
+    "body": [
+      "\\<medskip>"
+    ],
+    "description": "Medium skip : ┙",
+    "sortText": "00000"
+  },
+  "bigskip ─": {
+    "prefix": [
+      "\\bigskip"
+    ],
+    "body": [
+      "\\<bigskip>"
+    ],
+    "description": "Big skip : ─",
+    "sortText": "00000"
+  },
+  "item ▪": {
+    "prefix": [
+      "\\item"
+    ],
+    "body": [
+      "\\<item>"
+    ],
+    "description": "Item : ▪",
+    "sortText": "00000"
+  },
+  "enum ▸": {
+    "prefix": [
+      "\\enum"
+    ],
+    "body": [
+      "\\<enum>"
+    ],
+    "description": "Enumeration : ▸",
+    "sortText": "00000"
+  },
+  "descr ❧": {
+    "prefix": [
+      "\\descr"
+    ],
+    "body": [
+      "\\<descr>"
+    ],
+    "description": "Description : ❧",
+    "sortText": "00000"
+  },
+  "footnote ⁎": {
+    "prefix": [
+      "\\footnote"
+    ],
+    "body": [
+      "\\<footnote>"
+    ],
+    "description": "Footnote : ⁎",
+    "sortText": "00000"
+  },
+  "verbatim ▫": {
+    "prefix": [
+      "\\verbatim"
+    ],
+    "body": [
+      "\\<verbatim>"
+    ],
+    "description": "Verbatim : ▫",
+    "sortText": "00000"
+  },
+  "theory_text ⫦": {
+    "prefix": [
+      "\\theory_text"
+    ],
+    "body": [
+      "\\<theory_text>"
+    ],
+    "description": "Theory text : ⫦",
+    "sortText": "00000"
+  },
+  "emph ∗": {
+    "prefix": [
+      "\\emph"
+    ],
+    "body": [
+      "\\<emph>"
+    ],
+    "description": "Emphasis : ∗",
+    "sortText": "00000"
+  },
+  "bold ❙": {
+    "prefix": [
+      "\\bold"
+    ],
+    "body": [
+      "\\<bold>"
+    ],
+    "description": "Bold : ❙",
+    "sortText": "00000"
+  },
+  "sub ⇩": {
+    "prefix": [
+      "\\sub"
+    ],
+    "body": [
+      "\\<sub>"
+    ],
+    "description": "Subscript : ⇩",
+    "sortText": "00000"
+  },
+  "sup ⇧": {
+    "prefix": [
+      "\\sup"
+    ],
+    "body": [
+      "\\<sup>"
+    ],
+    "description": "Superscript : ⇧",
+    "sortText": "00000"
+  },
+  "bsub ⇘": {
+    "prefix": [
+      "\\bsub",
+      "=_("
+    ],
+    "body": [
+      "\\<bsub>"
+    ],
+    "description": "Begin subscript : ⇘",
+    "sortText": "00000"
+  },
+  "esub ⇙": {
+    "prefix": [
+      "\\esub",
+      "=_)"
+    ],
+    "body": [
+      "\\<esub>"
+    ],
+    "description": "End subscript : ⇙",
+    "sortText": "00000"
+  },
+  "bsup ⇗": {
+    "prefix": [
+      "\\bsup",
+      "=^("
+    ],
+    "body": [
+      "\\<bsup>"
+    ],
+    "description": "Begin superscript : ⇗",
+    "sortText": "00000"
+  },
+  "esup ⇖": {
+    "prefix": [
+      "\\esup",
+      "=^)"
+    ],
+    "body": [
+      "\\<esup>"
+    ],
+    "description": "End superscript : ⇖",
+    "sortText": "00000"
+  },
+  "file 🗏": {
+    "prefix": [
+      "\\file"
+    ],
+    "body": [
+      "\\<file>"
+    ],
+    "description": "File : 🗏",
+    "sortText": "00000"
+  },
+  "dir 🗀": {
+    "prefix": [
+      "\\dir"
+    ],
+    "body": [
+      "\\<dir>"
+    ],
+    "description": "Directory : 🗀",
+    "sortText": "00000"
+  },
+  "url 🌐": {
+    "prefix": [
+      "\\url"
+    ],
+    "body": [
+      "\\<url>"
+    ],
+    "description": "URL : 🌐",
+    "sortText": "00000"
+  },
+  "doc 🗎": {
+    "prefix": [
+      "\\doc"
+    ],
+    "body": [
+      "\\<doc>"
+    ],
+    "description": "Document : 🗎",
+    "sortText": "00000"
+  },
+  "action ☛": {
+    "prefix": [
+      "\\action"
+    ],
+    "body": [
+      "\\<action>"
+    ],
+    "description": "Action : ☛",
+    "sortText": "00000"
+  }
+}

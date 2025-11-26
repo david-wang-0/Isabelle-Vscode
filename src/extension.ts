@@ -20,6 +20,7 @@ import { Uri, TextEditor, ViewColumn, Selection, Position, Range, ExtensionConte
 import { LanguageClient, LanguageClientOptions, ServerOptions } from 'vscode-languageclient/node'
 import { Output_View_Provider } from './output_view'
 import { register_script_decorations } from './script_decorations'
+import * as prettify_symbols from './prettify_symbols'
 import { TypeSignatureCompletionProvider, FunctionBodyCompletionProvider, TheoryStructureCompletionProvider, ProofOutlineCompletionProvider, ProofStateCompletionProvider, ByDedentCompletionProvider, AlsoHaveCompletionProvider } from './function_completion'
 
 
@@ -94,6 +95,7 @@ export async function activate(context: ExtensionContext)
 {
   /* Copy snippets to workspace .vscode folder */
 
+  /*
   async function setupWorkspaceSnippets() {
     // Only setup if there's a workspace folder
     if (!workspace.workspaceFolders || workspace.workspaceFolders.length === 0) {
@@ -135,6 +137,10 @@ export async function activate(context: ExtensionContext)
 
   // Setup snippets on activation
   await setupWorkspaceSnippets();
+  */
+
+  /* prettify symbols */
+  prettify_symbols.setup(context)
 
   /* server */
 

@@ -29,6 +29,16 @@
     ],
     "main": "./out/src/extension",
     "contributes": {
+        "snippets": [
+            {
+                "language": "isabelle",
+                "path": "./snippets/isabelle-symbols.json"
+            },
+            {
+                "language": "isabelle-ml",
+                "path": "./snippets/isabelle-symbols.json"
+            }
+        ],
         "viewsContainers": {
             "panel": [
                 {
@@ -246,6 +256,19 @@
                         "Replaces all uniqe abbreviations"
                     ],
                     "description": "Symbol replacement mode."
+                },
+                "isabelle.prettifySymbolsMode": {
+                    "type": "string",
+                    "default": "selection",
+                    "enum": [
+                        "cursor",
+                        "selection"
+                    ],
+                    "enumDescriptions": [
+                        "Reveal symbols when the cursor contacts them.",
+                        "Reveal symbols when selected or when the cursor contacts them."
+                    ],
+                    "description": "When to reveal the original text of prettified symbols."
                 },
                 "isabelle.options": {
                     "type": "object",
