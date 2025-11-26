@@ -260,7 +260,7 @@ async function activate(context) {
             context.subscriptions.push(vscode_1.window.registerWebviewViewProvider(output_view_1.Output_View_Provider.view_type, provider));
             language_client.start().then(() => {
                 language_client.onNotification(lsp.dynamic_output_type, async (params) => {
-                    await provider.update_content(params.content);
+                    await provider.update_content(params.content, last_caret_update);
                     const content = params.content;
                     // Extract proof outline if present (priority 1)
                     if (content && content.includes('Proof outline with cases:')) {
@@ -296,7 +296,7 @@ async function activate(context) {
                 language_client.onNotification(lsp.state_output_type, async (params) => {
                     console.log('[ProofState] Received state_output_type notification');
                     console.log('[ProofState] Content length:', params.content?.length || 0);
-                    await provider.update_proof_state(params.content);
+                    await provider.update_proof_state(params.content, last_caret_update);
                     // Always try to extract and cache goal if present
                     // We don't check the current line here because:
                     // 1. The user might press Enter right after typing 'case (Suc n)' or 'next', moving the cursor to the next line
@@ -328,7 +328,7 @@ async function activate(context) {
                 context.subscriptions.push(vscode_1.window.onDidChangeTextEditorSelection(async () => {
                     // Give server time to send updates, then check if proof state should be cleared
                     setTimeout(async () => {
-                        await provider.check_and_clear_old_proof_state(1500);
+                        await provider.check_and_clear_old_proof_state(1500, last_caret_update);
                         // Also clear proof-outline cache if the caret moved away from the proof
                         try {
                             proofOutlineProvider.clearIfCaretMoved(last_caret_update);

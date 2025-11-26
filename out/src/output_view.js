@@ -53,6 +53,7 @@ class Output_View_Provider {
         this.content = '';
         this.proofState = '';
         this.lastProofStateTime = 0;
+        this.lastProofCaret = null;
         this.symbolConverter = new symbol_converter_1.SymbolConverter(this._extension_uri.fsPath);
     }
     async resolveWebviewView(view, context, _token) {
@@ -80,7 +81,7 @@ class Output_View_Provider {
             }
         });
     }
-    async update_content(content) {
+    async update_content(content, caret) {
         console.log('=== update_content called ===');
         console.log('Raw content:', content);
         // Extract main content, proof state, and errors from the raw content
@@ -105,10 +106,11 @@ class Output_View_Provider {
         this.proofState = convertedProofState;
         if (convertedProofState) {
             this.lastProofStateTime = Date.now();
+            this.lastProofCaret = caret || null;
         }
         this._view.webview.html = this._get_html(convertedContent, normalProofState, autoProofState, convertedErrorContent);
     }
-    async update_proof_state(stateContent) {
+    async update_proof_state(stateContent, caret) {
         console.log('=== update_proof_state called ===');
         console.log('Raw stateContent:', stateContent);
         // Convert Isabelle symbols to Unicode
@@ -120,6 +122,7 @@ class Output_View_Provider {
         console.log('Auto proof state:', autoProofState);
         this.proofState = convertedProofState;
         this.lastProofStateTime = Date.now();
+        this.lastProofCaret = caret || null;
         if (!this._view) {
             console.log('No view available');
             return;
@@ -212,10 +215,15 @@ class Output_View_Provider {
         }
         this._view.webview.html = this._get_html(this.content, '');
     }
-    async check_and_clear_old_proof_state(maxAgeMs = 2000) {
+    async check_and_clear_old_proof_state(maxAgeMs = 2000, currentCaret) {
         if (this.proofState && this.lastProofStateTime > 0) {
             const age = Date.now() - this.lastProofStateTime;
             if (age > maxAgeMs) {
+                if (currentCaret && this.lastProofCaret &&
+                    currentCaret.uri === this.lastProofCaret.uri &&
+                    currentCaret.line === this.lastProofCaret.line) {
+                    return;
+                }
                 await this.clear_proof_state();
             }
         }

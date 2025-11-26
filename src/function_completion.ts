@@ -715,8 +715,8 @@ export class ProofStateCompletionProvider implements CompletionItemProvider {
 
     // Extract assumptions (parts before ⟹ or \<Longrightarrow>)
     const assumptions: string[] = [];
-    // Split by both Unicode and escape sequence
-    let parts = goalLine.split(/⟹|\\<Longrightarrow>/);
+    // Split by implication arrow, respecting parenthesis nesting
+    let parts = this.splitByImplication(goalLine);
     
     console.log('[ProofStateCompletion] Split into', parts.length, 'parts');
     console.log('[ProofStateCompletion] Parts:', parts);
@@ -740,6 +740,51 @@ export class ProofStateCompletionProvider implements CompletionItemProvider {
     const result = { variables, assumptions };
     console.log('[ProofStateCompletion] Parse result:', JSON.stringify(result));
     return result;
+  }
+
+  /**
+   * Split goal string by implication arrow (⟹ or \<Longrightarrow>),
+   * respecting parenthesis nesting to avoid splitting inside terms.
+   */
+  private splitByImplication(text: string): string[] {
+    const parts: string[] = [];
+    let currentPartStart = 0;
+    let parenLevel = 0;
+    let i = 0;
+
+    while (i < text.length) {
+      const char = text[i];
+
+      if (char === '(') {
+        parenLevel++;
+        i++;
+      } else if (char === ')') {
+        if (parenLevel > 0) parenLevel--;
+        i++;
+      } else if (parenLevel === 0) {
+        // Check for ⟹
+        if (text.startsWith('⟹', i)) {
+          parts.push(text.substring(currentPartStart, i));
+          i += 1; // Length of ⟹
+          currentPartStart = i;
+        } 
+        // Check for \<Longrightarrow>
+        else if (text.startsWith('\\<Longrightarrow>', i)) {
+          parts.push(text.substring(currentPartStart, i));
+          i += 17; // Length of \<Longrightarrow>
+          currentPartStart = i;
+        } else {
+          i++;
+        }
+      } else {
+        i++;
+      }
+    }
+    
+    // Add the last part
+    parts.push(text.substring(currentPartStart));
+    
+    return parts;
   }
 
   /**

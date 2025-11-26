@@ -25,6 +25,7 @@ class Output_View_Provider implements WebviewViewProvider
   private proofState: string = ''
   private symbolConverter: SymbolConverter
   private lastProofStateTime: number = 0
+  private lastProofCaret: lsp.Caret_Update | null = null
 
   constructor(
     private readonly _extension_uri: Uri,
@@ -68,7 +69,7 @@ class Output_View_Provider implements WebviewViewProvider
     })
   }
 
-  public async update_content(content: string)
+  public async update_content(content: string, caret?: lsp.Caret_Update)
   {
     console.log('=== update_content called ===')
     console.log('Raw content:', content)
@@ -101,12 +102,13 @@ class Output_View_Provider implements WebviewViewProvider
     this.proofState = convertedProofState
     if (convertedProofState) {
       this.lastProofStateTime = Date.now()
+      this.lastProofCaret = caret || null
     }
 
     this._view.webview.html = this._get_html(convertedContent, normalProofState, autoProofState, convertedErrorContent)
   }
 
-  public async update_proof_state(stateContent: string)
+  public async update_proof_state(stateContent: string, caret?: lsp.Caret_Update)
   {
     console.log('=== update_proof_state called ===')
     console.log('Raw stateContent:', stateContent)
@@ -122,6 +124,7 @@ class Output_View_Provider implements WebviewViewProvider
 
     this.proofState = convertedProofState
     this.lastProofStateTime = Date.now()
+    this.lastProofCaret = caret || null
 
     if (!this._view) {
       console.log('No view available')
@@ -235,11 +238,16 @@ class Output_View_Provider implements WebviewViewProvider
     this._view.webview.html = this._get_html(this.content, '')
   }
 
-  public async check_and_clear_old_proof_state(maxAgeMs: number = 2000)
+  public async check_and_clear_old_proof_state(maxAgeMs: number = 2000, currentCaret?: lsp.Caret_Update)
   {
     if (this.proofState && this.lastProofStateTime > 0) {
       const age = Date.now() - this.lastProofStateTime
       if (age > maxAgeMs) {
+        if (currentCaret && this.lastProofCaret &&
+            currentCaret.uri === this.lastProofCaret.uri &&
+            currentCaret.line === this.lastProofCaret.line) {
+          return
+        }
         await this.clear_proof_state()
       }
     }
