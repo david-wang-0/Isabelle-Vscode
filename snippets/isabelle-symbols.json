@@ -2208,7 +2208,7 @@
       "<<"
     ],
     "body": [
-      "⟨$1⟩"
+      "\\<langle>$1\\<rangle>"
     ],
     "description": "Left angle bracket : ⟨$1⟩",
     "sortText": "00000"
@@ -2230,7 +2230,7 @@
       "<<"
     ],
     "body": [
-      "⟪$1⟫"
+      "\\<llangle>$1\\<rrangle>"
     ],
     "description": "Left double angle bracket : ⟪$1⟫",
     "sortText": "00000"
@@ -2252,7 +2252,7 @@
       "[."
     ],
     "body": [
-      "⌈$1⌉"
+      "\\<lceil>$1\\<rceil>"
     ],
     "description": "Left ceiling : ⌈$1⌉",
     "sortText": "00000"
@@ -2274,7 +2274,7 @@
       "[."
     ],
     "body": [
-      "⌊$1⌋"
+      "\\<lfloor>$1\\<rfloor>"
     ],
     "description": "Left floor : ⌊$1⌋",
     "sortText": "00000"
@@ -2293,10 +2293,19 @@
   "lparr ⦇$1⦈": {
     "prefix": [
       "\\lparr",
+    ],
+    "body": [
+      "\\<lparr>$1\\<rparr>"
+    ],
+    "description": "Left parenthesis with bar : ⦇$1⦈",
+    "sortText": "00000"
+  },
+  "lparr ⦇$1⦈ abbr": {
+    "prefix": [
       "(|"
     ],
     "body": [
-      "⦇$1⦈"
+      "(|$1|"
     ],
     "description": "Left parenthesis with bar : ⦇$1⦈",
     "sortText": "00000"
@@ -2315,10 +2324,19 @@
   "lbrakk ⟦$1⟧": {
     "prefix": [
       "\\lbrakk",
+    ],
+    "body": [
+      "\\<lbrakk>$1\\<rbrakk>"
+    ],
+    "description": "Left semantic bracket : ⟦$1⟧",
+    "sortText": "00000"
+  },
+  "lbrakk ⟦$1⟧ abbr": {
+    "prefix": [
       "[|"
     ],
     "body": [
-      "⟦$1⟧"
+      "[|$1|"
     ],
     "description": "Left semantic bracket : ⟦$1⟧",
     "sortText": "00000"
@@ -2337,10 +2355,19 @@
   "lbrace ⦃$1⦄": {
     "prefix": [
       "\\lbrace",
+    ],
+    "body": [
+      "\\<lbrace>$1\\<rbrace>"
+    ],
+    "description": "Left brace with bar : ⦃$1⦄",
+    "sortText": "00000"
+  },
+  "lbrace ⦃$1⦄ abbr": {
+    "prefix": [
       "{|"
     ],
     "body": [
-      "⦃$1⦄"
+      "{|$1|"
     ],
     "description": "Left brace with bar : ⦃$1⦄",
     "sortText": "00000"
@@ -2362,7 +2389,7 @@
       "<<"
     ],
     "body": [
-      "⦉$1⦊"
+      "\\<lblot>$1\\<rblot>"
     ],
     "description": "Left blot bracket : ⦉$1⦊",
     "sortText": "00000"
@@ -2384,7 +2411,7 @@
       "<<"
     ],
     "body": [
-      "«$1»"
+      "\\<guillemotleft>$1\\<guillemotright>"
     ],
     "description": "Left guillemet : «$1»",
     "sortText": "00000"
