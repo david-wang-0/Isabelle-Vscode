@@ -9,6 +9,8 @@ export class PrettifySymbolsProvider {
     private disposables: vscode.Disposable[] = [];
     private regex: RegExp | undefined;
     private revealMode: 'cursor' | 'selection' = 'selection';
+    private lastSelections: readonly vscode.Selection[] = [];
+    private isUpdatingSelection = false;
 
     constructor(context: vscode.ExtensionContext) {
         this.decorationType = vscode.window.createTextEditorDecorationType({
@@ -37,6 +39,7 @@ export class PrettifySymbolsProvider {
             }),
             vscode.window.onDidChangeTextEditorSelection(event => {
                 if (event.textEditor === vscode.window.activeTextEditor) {
+                    this.adjustCursorPosition(event.textEditor);
                     this.updateDecorations(event.textEditor);
                 }
             })
@@ -75,6 +78,89 @@ export class PrettifySymbolsProvider {
         } catch (error) {
             console.error('Failed to load Isabelle symbols:', error);
         }
+    }
+
+    private adjustCursorPosition(editor: vscode.TextEditor) {
+        if (this.revealMode !== 'selection' || !this.regex) {
+            this.lastSelections = editor.selections;
+            return;
+        }
+        
+        if (this.isUpdatingSelection) return;
+
+        const selections = editor.selections;
+        let newSelections: vscode.Selection[] = [];
+        let changed = false;
+
+        for (let i = 0; i < selections.length; i++) {
+            const selection = selections[i];
+            if (!selection.isEmpty) {
+                newSelections.push(selection);
+                continue;
+            }
+
+            const cursor = selection.active;
+            const line = editor.document.lineAt(cursor.line);
+            const text = line.text;
+            
+            let match;
+            this.regex.lastIndex = 0;
+            let bestPos = cursor;
+            let found = false;
+            
+            while ((match = this.regex.exec(text))) {
+                const startCol = match.index;
+                const endCol = match.index + match[0].length;
+                
+                // Check if cursor is strictly inside the symbol
+                if (cursor.character > startCol && cursor.character < endCol) {
+                    changed = true;
+                    found = true;
+                    
+                    // Determine direction based on previous selection
+                    const prevSelection = this.lastSelections[i];
+                    let jumpToStart = false;
+                    
+                    if (prevSelection && prevSelection.active.line === cursor.line) {
+                        const prevChar = prevSelection.active.character;
+                        // If we were at or past the end, and moved left into it -> jump to start
+                        if (prevChar >= endCol) {
+                            jumpToStart = true;
+                        }
+                        // If we were at or before start, and moved right into it -> jump to end
+                        else if (prevChar <= startCol) {
+                            jumpToStart = false;
+                        }
+                        // If we were already inside (shouldn't happen if logic works, but maybe via click)
+                        // Default to end if we can't determine
+                    } else {
+                        // No previous info or line changed. 
+                        // If we clicked inside, maybe jump to nearest edge?
+                        // For now, let's default to end as it's more common to type forward.
+                        // Or maybe check which edge is closer?
+                        if (cursor.character - startCol < endCol - cursor.character) {
+                            jumpToStart = true;
+                        }
+                    }
+                    
+                    if (jumpToStart) {
+                        bestPos = new vscode.Position(cursor.line, startCol);
+                    } else {
+                        bestPos = new vscode.Position(cursor.line, endCol);
+                    }
+                    break;
+                }
+            }
+            newSelections.push(found ? new vscode.Selection(bestPos, bestPos) : selection);
+        }
+
+        if (changed) {
+            this.isUpdatingSelection = true;
+            editor.selections = newSelections;
+            this.isUpdatingSelection = false;
+        }
+        
+        this.lastSelections = editor.selections;
     }
 
     public updateDecorations(editor: vscode.TextEditor) {
