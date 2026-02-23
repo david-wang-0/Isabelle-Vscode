@@ -315,6 +315,33 @@ export class PrettifySymbolsProvider {
             }
         }
 
+        // Handle control-style bold: "\\<^bold>" followed by a non-space token.
+        // Render the following token in bold and hide the control sequence.
+        const boldRegex = /\\<\^bold>(\S+)/g;
+        let boldMatch;
+        while ((boldMatch = boldRegex.exec(text)) !== null) {
+            const full = boldMatch[0];
+            const content = boldMatch[1];
+            // Try to map the content if it's a known symbol (e.g. "\\<Rightarrow>")
+            let converted = content;
+            try {
+                // content might itself be a control like "\\<Rightarrow>" in source
+                if (this.symbolMap[content]) converted = this.symbolMap[content];
+                else if (this.symbolMap['\\<' + content + '>']) converted = this.symbolMap['\\<' + content + '>'];
+            } catch (e) {
+                // ignore mapping errors and fall back to raw content
+            }
+
+            const startPos = editor.document.positionAt(boldMatch.index);
+            const endPos = editor.document.positionAt(boldMatch.index + full.length);
+            const range = new vscode.Range(startPos, endPos);
+            let intersecting = false;
+            for (const sel of selections) if (sel.intersection(range)) { intersecting = true; break; }
+            if (!intersecting) {
+                decorations.push({ range, renderOptions: { before: { contentText: converted, fontWeight: 'bold' } } });
+            }
+        }
+
         editor.setDecorations(this.decorationType, decorations);
     }
 
