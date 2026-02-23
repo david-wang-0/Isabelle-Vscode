@@ -8,6 +8,8 @@ export class PrettifySymbolsProvider {
     private symbolMap: { [key: string]: string } = {};
     private disposables: vscode.Disposable[] = [];
     private regex: RegExp | undefined;
+    private subscriptMap: { [key: string]: string } = {};
+    private superscriptMap: { [key: string]: string } = {};
     private revealMode: 'cursor' | 'selection' = 'selection';
     private lastSelections: readonly vscode.Selection[] = [];
     private isUpdatingSelection = false;
@@ -125,6 +127,15 @@ export class PrettifySymbolsProvider {
             if (vscode.window.activeTextEditor) {
                 this.updateDecorations(vscode.window.activeTextEditor);
             }
+            // initialize simple sub/sup maps for control symbols
+            this.subscriptMap = {
+                '0': '₀','1':'₁','2':'₂','3':'₃','4':'₄','5':'₅','6':'₆','7':'₇','8':'₈','9':'₉',
+                'a':'ₐ','e':'ₑ','h':'ₕ','i':'ᵢ','j':'ⱼ','k':'ₖ','l':'ₗ','m':'ₘ','n':'ₙ','o':'ₒ','p':'ₚ','r':'ᵣ','s':'ₛ','t':'ₜ','u':'ᵤ','v':'ᵥ','x':'ₓ'
+            };
+            this.superscriptMap = {
+                '0':'⁰','1':'¹','2':'²','3':'³','4':'⁴','5':'⁵','6':'⁶','7':'⁷','8':'⁸','9':'⁹',
+                'a':'ᵃ','b':'ᵇ','c':'ᶜ','d':'ᵈ','e':'ᵉ','f':'ᶠ','g':'ᵍ','h':'ʰ','i':'ⁱ','j':'ʲ','k':'ᵏ','l':'ˡ','m':'ᵐ','n':'ⁿ','o':'ᵒ','p':'ᵖ','r':'ʳ','s':'ˢ','t':'ᵗ','u':'ᵘ','v':'ᵛ','w':'ʷ','x':'ˣ','y':'ʸ','z':'ᶻ'
+            };
         } catch (error) {
             console.error('Failed to load Isabelle symbols:', error);
         }
@@ -266,6 +277,41 @@ export class PrettifySymbolsProvider {
                         }
                     });
                 }
+            }
+        }
+
+        // Also handle control-style subscripts/superscripts like "\<^sub>12" or "\<^sup>xy"
+        // Convert until next non-word character (space, punctuation)
+        const subRegex = /\\<\^sub>(\w+)/g;
+        let subMatch;
+        while ((subMatch = subRegex.exec(text)) !== null) {
+            const full = subMatch[0];
+            const content = subMatch[1];
+            const converted = content.split('').map(ch => this.subscriptMap[ch] || ch).join('');
+            const startPos = editor.document.positionAt(subMatch.index);
+            const endPos = editor.document.positionAt(subMatch.index + full.length);
+            const range = new vscode.Range(startPos, endPos);
+            // If not revealed by selection, add decoration
+            let intersecting = false;
+            for (const sel of selections) if (sel.intersection(range)) { intersecting = true; break; }
+            if (!intersecting) {
+                decorations.push({ range, renderOptions: { before: { contentText: converted } } });
+            }
+        }
+
+        const supRegex = /\\<\^sup>(\w+)/g;
+        let supMatch;
+        while ((supMatch = supRegex.exec(text)) !== null) {
+            const full = supMatch[0];
+            const content = supMatch[1];
+            const converted = content.split('').map(ch => this.superscriptMap[ch] || ch).join('');
+            const startPos = editor.document.positionAt(supMatch.index);
+            const endPos = editor.document.positionAt(supMatch.index + full.length);
+            const range = new vscode.Range(startPos, endPos);
+            let intersecting = false;
+            for (const sel of selections) if (sel.intersection(range)) { intersecting = true; break; }
+            if (!intersecting) {
+                decorations.push({ range, renderOptions: { before: { contentText: converted } } });
             }
         }
 
